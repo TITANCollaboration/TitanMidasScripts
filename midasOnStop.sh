@@ -5,7 +5,8 @@
 # This file was created to help centralize all of the MIDAS scripts
 
 # Convert the file on run stop
-sh /home/mpet/Aaron/TitanMidasScripts/convertOnRunStop.sh
+#sh /home/mpet/Aaron/TitanMidasScripts/convertOnRunStop.sh
+sh /home/mpet/local/scripts/convertOnRunStop.sh
 
 # Run python run control script
 # Use the "old" PerlRC scripts:
