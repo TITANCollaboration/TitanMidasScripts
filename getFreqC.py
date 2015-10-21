@@ -2,7 +2,7 @@ import calcFreq.calcFreq as calcfreq
 import pythonmidas.pythonmidas as Midas
 import numpy as np
 import re
-import sys
+#import sys
 
 CF = calcfreq.calcFreq()
 CF.getReference()
