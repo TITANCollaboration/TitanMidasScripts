@@ -8,4 +8,4 @@ The script makes use of the midas2eva package, specifically, the SDA class, whic
 
 # webtest2.html
 
-The file webtest2.html should be copied to the "~/online/custom/" directory, so that an online view of the PerlRC scan can be seen.;
+The file webtest2.html should be copied to the "~/online/custom/" directory, so that an online view of the PerlRC scan can be seen.
