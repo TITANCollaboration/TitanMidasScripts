@@ -1,0 +1,398 @@
+<html>
+	<head>
+		<script src="http://d3js.org/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://square.github.io/crossfilter/crossfilter.v1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="http://raw.githubusercontent.com/dc-js/dc.js/develop/dc.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="https://cdn.rawgit.com/dc-js/dc.js/develop/dc.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+		<!--<link href="http://raw.githubusercontent.com/dc-js/dc.js/develop/web/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+		<link href="https://cdn.rawgit.com/dc-js/dc.js/develop/web/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="https://cdn.rawgit.com/dc-js/dc.js/develop/web/css/dc.css" rel="stylesheet" type="text/css">
+		<script src="../mhttpd.js" type="text/javascript"></script>
+		<title>Simple Online PerlRC Viewer</title>
+	</head>
+	<body>
+	<form name="form2" action="PRCView&" method="get" target="_self">
+		<input name="redir" value="PRCView&" type=hidden>
+		<div class="row" align="center">
+				<table border=3 cellpadding=2>
+					<tr>
+						<th bgcolor="#A0A0FF">MPET
+						<th bgcolor="#A0A0FF">Simple PerlRC Viewer
+					</tr> 
+					<tr>
+						<td colspan="2" align="center">
+							<b><font color="#ff 0">Actions: </font></b>
+							<input type="submit" name="script" value="Convert PerlRC">
+							<input value="Status" name="cmd" type="submit">
+						</td>
+					</tr>
+				</table>
+		</div>
+		<div class="row" align="center">
+			<div class="span6" id="xvsN">
+				<h4>Counts vs Scan Val</h4>
+			</div>
+			<div class="span6" id="freqChart">
+				<h4>Count Class</h4>
+			</div>
+		</div>
+		<div class="row" align="center">
+			<div class="span6" id="blank">
+				<h4>Avg. TOF vs. Scan Val</h4>
+			</div>
+			<div class="span6" id="tofHisto">
+				<h4>TOF Histogram</h4>
+			</div>
+		<!-- 	<div class="span6" id="NHisto"> -->
+		<!-- 		<h4>N vs freq</h4> -->
+		<!-- 	</div> -->
+		</div>
+		<div class="row" align="center">
+			<div class="span6" id="stdTOF">
+				<h4> &sigma;<sub>TOF</sub> </h4>
+			</div>
+		</div>
+	</form>
+
+	<script type="text/javascript">
+		var foo = dc.barChart("#freqChart");
+
+		var allAvgTof = dc.compositeChart("#blank");
+		var bar = dc.lineChart(allAvgTof);
+		var bar2 = dc.lineChart(allAvgTof);
+
+		var allStdPlot = dc.compositeChart("#stdTOF");
+		var stdPlot = dc.lineChart(allStdPlot);
+		var stdPlot2 = dc.lineChart(allStdPlot);
+
+		var tofHisto = dc.barChart("#tofHisto");
+		var nfHisto = dc.barChart("#NHisto");
+
+		var allxvsN = dc.compositeChart("#xvsN");
+		var xvsN = dc.lineChart(allxvsN);
+		var xvsN2 = dc.lineChart(allxvsN);
+
+		d3.json("json",function(error,d){
+			console.log(d)
+			var facts = crossfilter(d);
+			var NDimension = facts.dimension(function(d){
+				return d.N;
+			});
+			var NValue = facts.dimension(function(d){
+				return d.N;
+			});
+			var NValueGroupCount = NValue.group().reduceCount(function(d){return d.N;});
+			var minN = NDimension.bottom(1)[0].N;
+			var maxN = NDimension.top(1)[0].N;
+			foo.width(400)
+			   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(NDimension)
+			   .group(NValueGroupCount)
+			   .transitionDuration(500)
+			   .centerBar(true)
+			   .gap(10)
+			   .yAxisLabel("Counts")
+			   .x(d3.scale.linear().domain([minN-1,maxN+1]))
+			   .elasticY(true)
+			   .xAxis().tickFormat();
+
+			var fLineDimension = facts.dimension(function(d){ return d.scanval; });
+			var fLineValueGroupAvg = fLineDimension.group().reduce(
+				//add
+				function(p,v){
+					if(v.scan == 2) {
+						return p;
+					}
+					p.sumtof += v.c*0.2;
+					++p.count;
+					p.avgtof = p.sumtof/p.count;
+					return p;
+				},
+				//remove
+				function(p,v){
+					if(v.scan == 2) {
+						return p;
+					}
+					--p.count;
+					p.sumtof -= v.c*0.2;
+					if( p.count > 0 ) {
+						p.avgtof = p.sumtof/p.count;
+					} else {
+						p.avgtof = 0;
+					}
+					return p;
+				},
+				function(){
+					return {count: 0, sumtof: 0, avgtof: 0};
+				}
+			);
+			var fLineValueGroupAvg2 = fLineDimension.group().reduce(
+				//add
+				function(p,v){
+					if(v.scan == 1) {
+						return p;
+					}
+					p.sumtof += v.c*0.2;
+					++p.count;
+					p.avgtof = p.sumtof/p.count;
+					return p;
+				},
+				//remove
+				function(p,v){
+					if(v.scan == 1) {
+						return p;
+					}
+					--p.count;
+					p.sumtof -= v.c*0.2;
+					if( p.count > 0 ) {
+						p.avgtof = p.sumtof/p.count;
+					} else {
+						p.avgtof = 0;
+					}
+					return p;
+				},
+				function(){
+					return {count: 0, sumtof: 0, avgtof: 0};
+				}
+			);
+			var minval = fLineDimension.bottom(1)[0].scanval;
+			var maxval = fLineDimension.top(1)[0].scanval;
+			bar.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(fLineDimension)
+			   .group(fLineValueGroupAvg)
+			   .colors(['#1f77b4'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .valueAccessor(function(d){
+					   return d.value.avgtof;
+					  })
+			   .xAxis();
+			bar2.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(fLineDimension)
+			   .group(fLineValueGroupAvg2)
+			   .colors(['#ff7f0e'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .valueAccessor(function(d){
+					   return d.value.avgtof;
+					  })
+			   .xAxis();
+
+			allAvgTof.width(400)
+			   .height(200)
+			   .compose([bar,bar2])
+			   .yAxisLabel("<TOF>")
+			   .xAxisLabel("Scan Value")
+			   .brushOn(false)
+			   .title(function(d) { return d.value.avgtof;})
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .xAxis();
+
+			var stdDimension = facts.dimension(function(d){ return d.scanval; });
+			var stdGroup = stdDimension.group().reduce(
+					function(p, v) {
+						if(v.scan == 2) {
+							return p;
+						}
+						p.sumtof += v.c;
+						p.sumtofsq += v.c * v.c;
+						++p.count;
+						p.avgtof = p.sumtof / p.count;
+						p.avgtofsq = p.sumtofsq / p.count;
+						p.std = 0.2 * Math.pow( p.avgtofsq - Math.pow(p.avgtof, 2) , 0.5);
+						return p;
+					},
+					function(p, v) {
+						if(v.scan == 2) {
+							return p;
+						}
+						p.sumtof -= v.c;
+						p.sumtofsq -= v.c * v.c;
+						--p.count;
+						p.avgtof = p.sumtof / p.count;
+						p.avgtofsq = p.sumtofsq / p.count;
+						p.std = 0.2 * Math.pow( p.avgtofsq - Math.pow(p.avgtof, 2) , 0.5);
+						return p;
+					},
+					function(p, v){
+						return {count: 0, sumtof: 0, sumtofsq: 0, avgtof:0, avgtofsq: 0, std: 0};
+					}
+			);
+			var stdGroup2 = stdDimension.group().reduce(
+					function(p, v) {
+						if(v.scan == 1) {
+							return p;
+						}
+						p.sumtof += v.c;
+						p.sumtofsq += v.c * v.c;
+						++p.count;
+						p.avgtof = p.sumtof / p.count;
+						p.avgtofsq = p.sumtofsq / p.count;
+						p.std = 0.2 * Math.pow( p.avgtofsq - Math.pow(p.avgtof, 2) , 0.5);
+						return p;
+					},
+					function(p, v) {
+						if(v.scan == 1) {
+							return p;
+						}
+						p.sumtof -= v.c;
+						p.sumtofsq -= v.c * v.c;
+						--p.count;
+						p.avgtof = p.sumtof / p.count;
+						p.avgtofsq = p.sumtofsq / p.count;
+						p.std = 0.2 * Math.pow( p.avgtofsq - Math.pow(p.avgtof, 2) , 0.5);
+						return p;
+					},
+					function(p, v){
+						return {count: 0, sumtof: 0, sumtofsq: 0, avgtof:0, avgtofsq: 0, std: 0};
+					}
+			);
+			stdPlot.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(stdDimension)
+			   .group(stdGroup)
+			   .colors(['#1f77b4'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .valueAccessor(function(d){
+					   return d.value.std;
+					  })
+			   .xAxis();
+			stdPlot2.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(stdDimension)
+			   .group(stdGroup2)
+			   .colors(['#ff7f0e'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .valueAccessor(function(d){
+					   return d.value.std;
+					  })
+			   .xAxis();
+			allStdPlot.width(400)
+			   .height(200)
+			   .compose([stdPlot,stdPlot2])
+			   .yAxisLabel("std(TOF)")
+			   .xAxisLabel("Scan Value")
+			   .elasticY(true)
+			   .brushOn(false)
+			   .title(function(d) { return d.value.avgtof;})
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .xAxis();
+			
+			var tofDimension = facts.dimension(function(d){
+					return 0.2*d.c;
+					});
+			var tofValue = facts.dimension(function(d){
+					return 0.2*d.c;
+					});
+			var tofValueGroup = tofValue.group().reduceCount(function(d){return 0.2*d.c;});
+			var minTof = tofDimension.bottom(1)[0].c * 0.2;
+			var maxTof = tofDimension.top(1)[0].c * 0.2;
+			tofHisto.width(400)
+				.height(200)
+				.margins({top: 10, right: 10, bottom: 20, left: 40})
+				.dimension(tofDimension)
+				.group(tofValueGroup)
+				.transitionDuration(500)
+				.centerBar(true)
+				.gap(10)
+				.yAxisLabel("Counts")
+				.x(d3.scale.linear().domain([minTof,maxTof]))
+				.elasticY(true)
+				.xAxis().tickFormat();
+
+			var nfDimension = facts.dimension(function(d){
+						return d.f;
+						});
+			var nfValue = facts.dimension(function(d){
+						return d.f;
+						});
+			var nfValueGroup = nfDimension.group().reduceCount(
+					function(d){
+					return d.f;
+					}
+					);
+			nfHisto.width(400)
+			       .height(200)
+			       .margins({top: 10, right: 10, bottom: 20, left: 40})
+			       .dimension(nfDimension)
+			       .group(nfValueGroup)
+			       .transitionDuration(500)
+			       .centerBar(true)
+			       .gap(10)
+			       .x(d3.scale.linear().domain([0,40]))
+			       .elasticY(true)
+			       .xAxis().tickFormat();
+
+			var xNDimension = facts.dimension(function(d){ return d.scanval; });
+			var nxValueGroup = xNDimension.group().reduceSum(function(d)
+					{
+					return (2 - d.scan) * d.N;
+					});
+			var nxValueGroup2 = xNDimension.group().reduceSum(function(d)
+					{
+					if(d.scan == 1) {
+						return 0;
+					}
+					return d.N;
+					});
+			
+			xvsN.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(xNDimension)
+			   .group(nxValueGroup, "Off Resonance")
+			   .colors(['#1f77b4'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .xAxis();
+			xvsN2.width(400)
+	  		   .height(200)
+			   .margins({top: 10, right: 10, bottom: 20, left: 40})
+			   .dimension(xNDimension)
+			   .group(nxValueGroup2, "On Resonance")
+			   .colors(['#ff7f0e'])
+			   .colorAccessor(function(d, i){ return i;})
+			   .transitionDuration(500)
+			   .elasticY(true)
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .xAxis();
+			
+			allxvsN.width(400)
+			   .height(200)
+			   .compose([xvsN,xvsN2])
+			   .yAxisLabel("Counts")
+			   .xAxisLabel("Scan Value")
+			   .elasticY(true)
+			   .brushOn(false)
+			   .title(function(d) { return d.value.avgtof;})
+			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .xAxis();
+
+			dc.renderAll();
+		});
+	</script>
+	<body>
+
+</html>
