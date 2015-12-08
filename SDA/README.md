@@ -2,6 +2,47 @@
 
 This is a collection of conversion scripts and MATLAB plotting routines to plot data from PerlRC scans.
 
+# Analyzing the most recent PerlRC scan
+
+After running a PerlRC scan, to "analyze" the files and "plot" the results, you must:
+
+* Press the "Convert PerlRC" button on the MIDAS status page.
+* Press the "PRCView" button to see the scan results in the brower.
+
+'''NOTE''': This will only convert the data in the most recent PerlRC scan.
+If you want to plot past data then you need to follow the directions in "Plotting Older Scans".
+
+It may be that you need to change the MCA range for your PerlRC scan.
+One instance where this may be required is when changing from SCI to HCI.
+
+The MCA range is set in the file "/home/mpet/local/scripts/SDA/simplifiedScan1Danalysis_input_AG.dat".
+Simply open the file in a text editor "nano, pico, nedit, vim, emacs, etc.) and set the range to appropriate values. 
+Then, re-convert the files with the new MCA range by pressing the "Convert PerlRC" button.
+
+## PRCView Page Not Working
+
+If the PRCView page is not working, then you can plot the PerlRC scan in MATLAB.
+First, convert the last PerlRC scan by pressing the "Convert PerlRC" button.
+Then, in a terminal, enter the following commands: 
+* cd ~/local/scripts/SDA/
+* matlab &
+
+In MATLAB:
+* simplifiedScan1DanalysisPlottingWithIonsVsF_AG
+
+If the PerlRC scan was a 2D scan, also run the command:
+* analysis2Dscan2values
+
+MATLAB will open a plotting window with the results from the PerlRC scan.
+
+## Plotting Older Scans
+
+If you want to replot an older scan, you can do this by opening the PerlRC.log file.
+This file is located in "/data1/mpet".
+
+Find the scan you wish to plot, and copy and paste these lines to the end of the file.
+Then follow the steps above to plot the scan results.
+
 # General Operation
 
 ## Theory of Operation
