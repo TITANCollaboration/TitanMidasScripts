@@ -292,7 +292,7 @@ def GetTime():
     The format is H:M:S dayName monthName dayNumber Year.
     Example 14:36:16 Wed Aug 21 2013
     """
-    return datetime.datetime.now().strftime("%X, %a %b %d %Y")
+    return datetime.datetime.now().strftime("%X, %a %b %d, %Y")
 
 
 def LogScanStart():
@@ -310,8 +310,8 @@ def LogScanStart():
         NRuns = Midas.varget(RunControlPath + "RCTotalRuns")
 
         with open(LogFile, 'a') as myfile:
-            myfile.write("=== New PerlRC scan at " + CurrentTime + " ===\n")
-            myfile.write("=== ScanType is \"" + ScanType + "\"; "
+            myfile.write("=== NEW PerlRC scan at " + CurrentTime + " ===\n")
+            myfile.write("=== Scan type is \"" + ScanType + "\"; "
                          + "Current Tune is \"" + CurrentTune + "\" ===\n")
             myfile.write("=== Number of runs in this scan is " +
                          NRuns + " ===\n")

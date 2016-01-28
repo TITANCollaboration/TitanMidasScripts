@@ -1,26 +1,15 @@
-21 51
+21 150
 /titan/data1/mpet/PerlRCData/
 0
-TOF gate (ms)
-/triumfcs/trshare/titan/MPET/Data/run264997_pos.dat 0.024000
-/triumfcs/trshare/titan/MPET/Data/run264998_pos.dat 0.024000
-/triumfcs/trshare/titan/MPET/Data/run264999_pos.dat 0.024200
-/triumfcs/trshare/titan/MPET/Data/run265000_pos.dat 0.024200
-/triumfcs/trshare/titan/MPET/Data/run265001_pos.dat 0.024400
-/triumfcs/trshare/titan/MPET/Data/run265002_pos.dat 0.024400
-/triumfcs/trshare/titan/MPET/Data/run265003_pos.dat 0.024600
-/triumfcs/trshare/titan/MPET/Data/run265004_pos.dat 0.024600
-/triumfcs/trshare/titan/MPET/Data/run265005_pos.dat 0.024800
-/triumfcs/trshare/titan/MPET/Data/run265006_pos.dat 0.024800
-/triumfcs/trshare/titan/MPET/Data/run265007_pos.dat 0.025000
-/triumfcs/trshare/titan/MPET/Data/run265008_pos.dat 0.025000
-/triumfcs/trshare/titan/MPET/Data/run265009_pos.dat 0.025200
-/triumfcs/trshare/titan/MPET/Data/run265010_pos.dat 0.025200
-/triumfcs/trshare/titan/MPET/Data/run265011_pos.dat 0.025400
-/triumfcs/trshare/titan/MPET/Data/run265012_pos.dat 0.025400
-/triumfcs/trshare/titan/MPET/Data/run265013_pos.dat 0.025600
-/triumfcs/trshare/titan/MPET/Data/run265014_pos.dat 0.025600
-/triumfcs/trshare/titan/MPET/Data/run265015_pos.dat 0.025800
-/triumfcs/trshare/titan/MPET/Data/run265016_pos.dat 0.025800
-/triumfcs/trshare/titan/MPET/Data/run265017_pos.dat 0.026000
-/triumfcs/trshare/titan/MPET/Data/run265018_pos.dat 0.026000
+MPETCaptureDelay (ms)
+/triumfcs/trshare/titan/MPET/Data/run265364_pos.dat 0.100000
+/triumfcs/trshare/titan/MPET/Data/run265365_pos.dat 0.100200
+/triumfcs/trshare/titan/MPET/Data/run265366_pos.dat 0.100400
+/triumfcs/trshare/titan/MPET/Data/run265367_pos.dat 0.100600
+/triumfcs/trshare/titan/MPET/Data/run265368_pos.dat 0.100800
+/triumfcs/trshare/titan/MPET/Data/run265369_pos.dat 0.101000
+/triumfcs/trshare/titan/MPET/Data/run265370_pos.dat 0.101200
+/triumfcs/trshare/titan/MPET/Data/run265371_pos.dat 0.101400
+/triumfcs/trshare/titan/MPET/Data/run265372_pos.dat 0.101600
+/triumfcs/trshare/titan/MPET/Data/run265373_pos.dat 0.101800
+/triumfcs/trshare/titan/MPET/Data/run265374_pos.dat 0.102000

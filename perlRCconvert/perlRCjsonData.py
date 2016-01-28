@@ -33,8 +33,15 @@ def getjson(filename):
     jsonData = []
     for i in xrange(len(bindata)):
         hist = Counter(bindata[i])
+        countclass = sum(hist.values())
+        if countclass == 0:
+            invcc = 0
+        else:
+            invcc = 1. / float(countclass)
         for j in hist:
-            jsonData.append({'f': i % numFreq, 'c': j, 'N': hist[j]})
+            jsonData.append({'f': i % numFreq, 'c': j, 'N': hist[j],
+                             'countclass': countclass,
+                             'invcc': invcc})
 
     return jsonData
 
