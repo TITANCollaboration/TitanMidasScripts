@@ -77,15 +77,25 @@
 		d3.json("json",function(error,d){
 			console.log(d)
 			var facts = crossfilter(d);
+			//var NDimension = facts.dimension(function(d){
+			//	return d.N;
+			//});
+			//var NValue = facts.dimension(function(d){
+			//	return d.N;
+			//});
 			var NDimension = facts.dimension(function(d){
-				return d.N;
+				return d.countclass;
 			});
 			var NValue = facts.dimension(function(d){
-				return d.N;
+				return d.countclass;
 			});
-			var NValueGroupCount = NValue.group().reduceCount(function(d){return d.N;});
-			var minN = NDimension.bottom(1)[0].N;
-			var maxN = NDimension.top(1)[0].N;
+			//var NValueGroupCount = NValue.group().reduceCount(function(d){return d.N;});
+			//var minN = NDimension.bottom(1)[0].N;
+			//var maxN = NDimension.top(1)[0].N;
+			var NValueGroupCount = NValue.group().reduceCount(function(d){return d.invcc;});
+			console.log(NValueGroupCount);
+			var minN = NDimension.bottom(1)[0].countclass;
+			var maxN = NDimension.top(1)[0].countclass;
 			foo.width(400)
 			   .height(200)
 			   .margins({top: 10, right: 10, bottom: 20, left: 40})
@@ -128,7 +138,7 @@
 				function(){
 					return {count: 0, sumtof: 0, avgtof: 0};
 				}
-			);
+			).order(function(p){return p.avgtof;});
 			var fLineValueGroupAvg2 = fLineDimension.group().reduce(
 				//add
 				function(p,v){
@@ -157,9 +167,35 @@
 				function(){
 					return {count: 0, sumtof: 0, avgtof: 0};
 				}
-			);
+			).order(function(p){return p.avgtof;});
 			var minval = fLineDimension.bottom(1)[0].scanval;
 			var maxval = fLineDimension.top(1)[0].scanval;
+
+			var maxtof, mintof, maxtof2, mintof2;
+			var MinTof, MaxTof;
+
+			var maxtof = fLineValueGroupAvg.top(fLineValueGroupAvg.size())[0].value.avgtof;
+			var mintof = fLineValueGroupAvg.top(fLineValueGroupAvg.size())[fLineValueGroupAvg.size()-1].value.avgtof;
+
+			var maxtof2 = fLineValueGroupAvg2.top(fLineValueGroupAvg2.size())[0].value.avgtof;
+			var mintof2 = fLineValueGroupAvg2.top(fLineValueGroupAvg2.size())[fLineValueGroupAvg2.size()-1].value.avgtof;
+
+			var MinTof;
+			if(mintof2 == 0) {
+				MinTof = mintof;
+			} else {
+				MinTof = Math.min(mintof,mintof2);
+			}
+			var MaxTof;
+			if(maxtof2 == 0) {
+				MaxTof = maxtof;
+			} else {
+				MaxTof = Math.max(maxtof,maxtof2);
+			}
+
+			MinTof -= 10;
+			MaxTof += 10;
+
 			bar.width(400)
 	  		   .height(200)
 			   .margins({top: 10, right: 10, bottom: 20, left: 40})
@@ -168,7 +204,6 @@
 			   .colors(['#1f77b4'])
 			   .colorAccessor(function(d, i){ return i;})
 			   .transitionDuration(500)
-			   .elasticY(true)
 			   .x(d3.scale.linear().domain([minval,maxval]))
 			   .valueAccessor(function(d){
 					   return d.value.avgtof;
@@ -182,12 +217,41 @@
 			   .colors(['#ff7f0e'])
 			   .colorAccessor(function(d, i){ return i;})
 			   .transitionDuration(500)
-			   .elasticY(true)
 			   .x(d3.scale.linear().domain([minval,maxval]))
 			   .valueAccessor(function(d){
 					   return d.value.avgtof;
 					  })
 			   .xAxis();
+
+			allAvgTof.on("preRedraw", function(allAvgTof){
+					   fLineValueGroupAvgTop = fLineValueGroupAvg.top(fLineValueGroupAvg.size())
+					   //maxtof = fLineValueGroupAvg.top(fLineValueGroupAvg.size())[0].value.avgtof;
+					   //mintof = fLineValueGroupAvg.top(fLineValueGroupAvg.size())[fLineValueGroupAvg.size()-1].value.avgtof;
+					   maxtof = fLineValueGroupAvgTop[0].value.avgtof;
+					   mintof = fLineValueGroupAvgTop[fLineValueGroupAvg.size()-1].value.avgtof;
+					   
+					   fLineValueGroupAvgTop2 = fLineValueGroupAvg2.top(fLineValueGroupAvg2.size());
+					   //maxtof2 = fLineValueGroupAvg2.top(fLineValueGroupAvg2.size())[0].value.avgtof;
+					   //mintof2 = fLineValueGroupAvg2.top(fLineValueGroupAvg2.size())[fLineValueGroupAvg2.size()-1].value.avgtof;
+					   maxtof2 = fLineValueGroupAvgTop2[0].value.avgtof;
+					   mintof2 = fLineValueGroupAvgTop2[fLineValueGroupAvg2.size()-1].value.avgtof;
+					   
+					   if(mintof2 == 0) {
+						MinTof = mintof;
+					   } else {
+						MinTof = Math.min(mintof,mintof2);
+					   }
+					   if(maxtof2 == 0) {
+						MaxTof = maxtof;
+					   } else {
+						MaxTof = Math.max(maxtof,maxtof2);
+					   }
+					   
+					   MinTof -= 5;
+					   MaxTof += 5;
+					   allAvgTof.y(d3.scale.linear().domain([MinTof,MaxTof]));
+					   //console.log([MinTof, MaxTof]);
+			   });
 
 			allAvgTof.width(400)
 			   .height(200)
@@ -196,9 +260,10 @@
 			   .xAxisLabel("Scan Value")
 			   .brushOn(false)
 			   .title(function(d) { return d.value.avgtof;})
-			   .elasticY(true)
 			   .x(d3.scale.linear().domain([minval,maxval]))
+			   .y(d3.scale.linear().domain([MinTof,MaxTof]))
 			   .xAxis();
+
 
 			var stdDimension = facts.dimension(function(d){ return d.scanval; });
 			var stdGroup = stdDimension.group().reduce(
@@ -241,6 +306,7 @@
 						p.avgtof = p.sumtof / p.count;
 						p.avgtofsq = p.sumtofsq / p.count;
 						p.std = 0.2 * Math.pow( p.avgtofsq - Math.pow(p.avgtof, 2) , 0.5);
+
 						return p;
 					},
 					function(p, v) {
@@ -270,6 +336,9 @@
 			   .elasticY(true)
 			   .x(d3.scale.linear().domain([minval,maxval]))
 			   .valueAccessor(function(d){
+					   if (isNaN(d.value.std)) {
+						return 0.0;
+					   }
 					   return d.value.std;
 					  })
 			   .xAxis();
@@ -284,6 +353,9 @@
 			   .elasticY(true)
 			   .x(d3.scale.linear().domain([minval,maxval]))
 			   .valueAccessor(function(d){
+					   if (isNaN(d.value.std)) {
+						return 0.0;
+					   }
 					   return d.value.std;
 					  })
 			   .xAxis();

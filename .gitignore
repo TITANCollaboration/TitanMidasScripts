@@ -42,8 +42,8 @@ Thumbs.db
 
 # Ignore some specific files in SDA #
 # ###################################
-SDA/fileListPlotPos.dat
-SDA/fileListPlotTOF.dat
-SDA/m2eseries_se.sh
-SDA/simplifiedScan1DanalysisPlotting.out
-SDA/simplifiedScan1Danalysis_input_AG.dat
+./SDA/fileListPlotPos.dat
+./SDA/fileListPlotTOF.dat
+./SDA/m2eseries_se.sh
+./SDA/simplifiedScan1DanalysisPlotting.out
+./SDA/simplifiedScan1Danalysis_input_AG.dat
