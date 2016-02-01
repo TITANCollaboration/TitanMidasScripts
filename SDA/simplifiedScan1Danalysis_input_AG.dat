@@ -1,14 +1,1318 @@
 convert Midas files?
 y
 m2e default:
-./m2e_se.sh -e1Na23 -z1 -x0.100 -v0.271 /titan/data5/mpet/20160128/
+./m2e_se.sh -e1Na23 -z1 -x0.100 -v0.271 /titan/data5/mpet/20160201/
 MCA Range: 
-21 150
+40 90
 Plot Indiviudal?
 n
 Plot Positions?
 n
 Scan2D Value:
+<Run #268387> MPET:PLTM (V)=-240.0;
+<Run #268388> MPET:PLTM (V)=-242.0;
+<Run #268389> MPET:PLTM (V)=-244.0;
+<Run #268390> MPET:PLTM (V)=-246.0;
+<Run #268391> MPET:PLTM (V)=-248.0;
+<Run #268392> MPET:PLTM (V)=-250.0;
+<Run #268393> MPET:PLTM (V)=-252.0;
+<Run #268394> MPET:PLTM (V)=-254.0;
+<Run #268395> MPET:PLTM (V)=-256.0;
+<Run #268396> MPET:PLTM (V)=-258.0;
+<Run #268397> MPET:PLTM (V)=-260.0;
+end
+
+<Run #268376> MPETCaptureDelay (ms)=0.1001;
+<Run #268377> MPETCaptureDelay (ms)=0.1003;
+<Run #268378> MPETCaptureDelay (ms)=0.1005;
+<Run #268379> MPETCaptureDelay (ms)=0.1007;
+<Run #268380> MPETCaptureDelay (ms)=0.1009;
+<Run #268381> MPETCaptureDelay (ms)=0.1011;
+<Run #268382> MPETCaptureDelay (ms)=0.1013;
+<Run #268383> MPETCaptureDelay (ms)=0.1015;
+<Run #268384> MPETCaptureDelay (ms)=0.1017;
+<Run #268385> MPETCaptureDelay (ms)=0.1019;
+<Run #268386> MPETCaptureDelay (ms)=0.1021;
+end
+
+<Run #268361> TRFC:PB5 (V)=17933.0;
+<Run #268362> TRFC:PB5 (V)=17935.0;
+<Run #268363> TRFC:PB5 (V)=17937.0;
+<Run #268364> TRFC:PB5 (V)=17939.0;
+<Run #268365> TRFC:PB5 (V)=17941.0;
+<Run #268366> TRFC:PB5 (V)=17943.0;
+<Run #268367> TRFC:PB5 (V)=17945.0;
+<Run #268368> TRFC:PB5 (V)=17947.0;
+<Run #268369> TRFC:PB5 (V)=17949.0;
+<Run #268370> TRFC:PB5 (V)=17951.0;
+<Run #268371> TRFC:PB5 (V)=17953.0;
+end
+
+<Run #268337> QuadRFTime (ms)=0.001;
+<Run #268338> QuadRFTime (ms)=0.002;
+<Run #268339> QuadRFTime (ms)=0.003;
+<Run #268340> QuadRFTime (ms)=0.004;
+<Run #268341> QuadRFTime (ms)=0.005;
+<Run #268342> QuadRFTime (ms)=0.006;
+<Run #268343> QuadRFTime (ms)=0.007;
+<Run #268344> QuadRFTime (ms)=0.008;
+<Run #268345> QuadRFTime (ms)=0.009;
+<Run #268346> QuadRFTime (ms)=0.01;
+<Run #268347> QuadRFTime (ms)=0.011;
+<Run #268348> QuadRFTime (ms)=0.012;
+<Run #268349> QuadRFTime (ms)=0.013;
+<Run #268350> QuadRFTime (ms)=0.014;
+<Run #268351> QuadRFTime (ms)=0.015;
+<Run #268352> QuadRFTime (ms)=0.016;
+<Run #268353> QuadRFTime (ms)=0.017;
+<Run #268354> QuadRFTime (ms)=0.018;
+<Run #268355> QuadRFTime (ms)=0.019;
+<Run #268356> QuadRFTime (ms)=0.02;
+<Run #268357> QuadRFTime (ms)=0.021;
+end
+
+<Run #268316> QuadRFTime (ms)=0.001;
+<Run #268317> QuadRFTime (ms)=0.002;
+<Run #268318> QuadRFTime (ms)=0.003;
+<Run #268319> QuadRFTime (ms)=0.004;
+<Run #268320> QuadRFTime (ms)=0.005;
+<Run #268321> QuadRFTime (ms)=0.006;
+<Run #268322> QuadRFTime (ms)=0.007;
+<Run #268323> QuadRFTime (ms)=0.008;
+<Run #268324> QuadRFTime (ms)=0.009;
+<Run #268325> QuadRFTime (ms)=0.01;
+<Run #268326> QuadRFTime (ms)=0.011;
+<Run #268327> QuadRFTime (ms)=0.012;
+<Run #268328> QuadRFTime (ms)=0.013;
+<Run #268329> QuadRFTime (ms)=0.014;
+<Run #268330> QuadRFTime (ms)=0.015;
+<Run #268331> QuadRFTime (ms)=0.016;
+<Run #268332> QuadRFTime (ms)=0.017;
+<Run #268333> QuadRFTime (ms)=0.018;
+<Run #268334> QuadRFTime (ms)=0.019;
+<Run #268335> QuadRFTime (ms)=0.02;
+<Run #268336> QuadRFTime (ms)=0.021;
+end
+
+<Run #268296> QuadRFTime (ms)=0.001;
+<Run #268297> QuadRFTime (ms)=0.002;
+<Run #268298> QuadRFTime (ms)=0.003;
+<Run #268299> QuadRFTime (ms)=0.004;
+<Run #268300> QuadRFTime (ms)=0.005;
+<Run #268301> QuadRFTime (ms)=0.006;
+<Run #268302> QuadRFTime (ms)=0.007;
+<Run #268303> QuadRFTime (ms)=0.008;
+<Run #268304> QuadRFTime (ms)=0.009;
+<Run #268305> QuadRFTime (ms)=0.01;
+<Run #268306> QuadRFTime (ms)=0.011;
+<Run #268307> QuadRFTime (ms)=0.012;
+<Run #268308> QuadRFTime (ms)=0.013;
+<Run #268309> QuadRFTime (ms)=0.014;
+<Run #268310> QuadRFTime (ms)=0.015;
+<Run #268311> QuadRFTime (ms)=0.016;
+<Run #268312> QuadRFTime (ms)=0.017;
+<Run #268313> QuadRFTime (ms)=0.018;
+end
+
+<Run #268296> QuadRFTime (ms)=0.001;
+<Run #268297> QuadRFTime (ms)=0.002;
+<Run #268298> QuadRFTime (ms)=0.003;
+<Run #268299> QuadRFTime (ms)=0.004;
+<Run #268300> QuadRFTime (ms)=0.005;
+<Run #268301> QuadRFTime (ms)=0.006;
+<Run #268302> QuadRFTime (ms)=0.007;
+<Run #268303> QuadRFTime (ms)=0.008;
+<Run #268304> QuadRFTime (ms)=0.009;
+<Run #268305> QuadRFTime (ms)=0.01;
+<Run #268306> QuadRFTime (ms)=0.011;
+<Run #268307> QuadRFTime (ms)=0.012;
+<Run #268308> QuadRFTime (ms)=0.013;
+<Run #268309> QuadRFTime (ms)=0.014;
+<Run #268310> QuadRFTime (ms)=0.015;
+<Run #268311> QuadRFTime (ms)=0.016;
+<Run #268312> QuadRFTime (ms)=0.017;
+<Run #268313> QuadRFTime (ms)=0.018;
+<Run #268314> QuadRFTime (ms)=0.019;
+<Run #268315> QuadRFTime (ms)=0.02;
+end
+
+<Run #268296> QuadRFTime (ms)=0.001;
+<Run #268297> QuadRFTime (ms)=0.002;
+<Run #268298> QuadRFTime (ms)=0.003;
+<Run #268299> QuadRFTime (ms)=0.004;
+<Run #268300> QuadRFTime (ms)=0.005;
+<Run #268301> QuadRFTime (ms)=0.006;
+<Run #268302> QuadRFTime (ms)=0.007;
+<Run #268303> QuadRFTime (ms)=0.008;
+<Run #268304> QuadRFTime (ms)=0.009;
+<Run #268305> QuadRFTime (ms)=0.01;
+<Run #268306> QuadRFTime (ms)=0.011;
+<Run #268307> QuadRFTime (ms)=0.012;
+<Run #268308> QuadRFTime (ms)=0.013;
+<Run #268309> QuadRFTime (ms)=0.014;
+<Run #268310> QuadRFTime (ms)=0.015;
+<Run #268311> QuadRFTime (ms)=0.016;
+<Run #268312> QuadRFTime (ms)=0.017;
+<Run #268313> QuadRFTime (ms)=0.018;
+<Run #268314> QuadRFTime (ms)=0.019;
+<Run #268315> QuadRFTime (ms)=0.02;
+end
+
+<Run #268296> QuadRFTime (ms)=0.001;
+<Run #268297> QuadRFTime (ms)=0.002;
+<Run #268298> QuadRFTime (ms)=0.003;
+<Run #268299> QuadRFTime (ms)=0.004;
+<Run #268300> QuadRFTime (ms)=0.005;
+<Run #268301> QuadRFTime (ms)=0.006;
+<Run #268302> QuadRFTime (ms)=0.007;
+<Run #268303> QuadRFTime (ms)=0.008;
+<Run #268304> QuadRFTime (ms)=0.009;
+<Run #268305> QuadRFTime (ms)=0.01;
+<Run #268306> QuadRFTime (ms)=0.011;
+<Run #268307> QuadRFTime (ms)=0.012;
+<Run #268308> QuadRFTime (ms)=0.013;
+<Run #268309> QuadRFTime (ms)=0.014;
+<Run #268310> QuadRFTime (ms)=0.015;
+<Run #268311> QuadRFTime (ms)=0.016;
+<Run #268312> QuadRFTime (ms)=0.017;
+<Run #268313> QuadRFTime (ms)=0.018;
+<Run #268314> QuadRFTime (ms)=0.019;
+<Run #268315> QuadRFTime (ms)=0.02;
+end
+
+<Run #268296> QuadRFTime (ms)=0.001;
+<Run #268297> QuadRFTime (ms)=0.002;
+<Run #268298> QuadRFTime (ms)=0.003;
+<Run #268299> QuadRFTime (ms)=0.004;
+<Run #268300> QuadRFTime (ms)=0.005;
+<Run #268301> QuadRFTime (ms)=0.006;
+<Run #268302> QuadRFTime (ms)=0.007;
+<Run #268303> QuadRFTime (ms)=0.008;
+<Run #268304> QuadRFTime (ms)=0.009;
+<Run #268305> QuadRFTime (ms)=0.01;
+<Run #268306> QuadRFTime (ms)=0.011;
+<Run #268307> QuadRFTime (ms)=0.012;
+<Run #268308> QuadRFTime (ms)=0.013;
+<Run #268309> QuadRFTime (ms)=0.014;
+<Run #268310> QuadRFTime (ms)=0.015;
+<Run #268311> QuadRFTime (ms)=0.016;
+<Run #268312> QuadRFTime (ms)=0.017;
+<Run #268313> QuadRFTime (ms)=0.018;
+<Run #268314> QuadRFTime (ms)=0.019;
+<Run #268315> QuadRFTime (ms)=0.02;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+<Run #268254> MPETRFAmp (V)=0.676966666667;
+<Run #268255> MPETRFAmp (V)=0.707733333333;
+<Run #268256> MPETRFAmp (V)=0.7385;
+<Run #268257> MPETRFAmp (V)=0.769266666667;
+<Run #268258> MPETRFAmp (V)=0.800033333333;
+<Run #268259> MPETRFAmp (V)=0.8308;
+<Run #268260> MPETRFAmp (V)=0.861566666667;
+<Run #268261> MPETRFAmp (V)=0.892333333333;
+<Run #268262> MPETRFAmp (V)=0.9231;
+<Run #268263> MPETRFAmp (V)=0.953866666667;
+<Run #268264> MPETRFAmp (V)=0.984633333333;
+<Run #268265> MPETRFAmp (V)=1.0154;
+<Run #268266> MPETRFAmp (V)=1.04616666667;
+<Run #268267> MPETRFAmp (V)=1.07693333333;
+<Run #268268> MPETRFAmp (V)=1.1077;
+<Run #268269> MPETRFAmp (V)=1.13846666667;
+<Run #268270> MPETRFAmp (V)=1.16923333333;
+<Run #268271> MPETRFAmp (V)=1.2;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+<Run #268254> MPETRFAmp (V)=0.676966666667;
+<Run #268255> MPETRFAmp (V)=0.707733333333;
+<Run #268256> MPETRFAmp (V)=0.7385;
+<Run #268257> MPETRFAmp (V)=0.769266666667;
+<Run #268258> MPETRFAmp (V)=0.800033333333;
+<Run #268259> MPETRFAmp (V)=0.8308;
+<Run #268260> MPETRFAmp (V)=0.861566666667;
+<Run #268261> MPETRFAmp (V)=0.892333333333;
+<Run #268262> MPETRFAmp (V)=0.9231;
+<Run #268263> MPETRFAmp (V)=0.953866666667;
+<Run #268264> MPETRFAmp (V)=0.984633333333;
+<Run #268265> MPETRFAmp (V)=1.0154;
+<Run #268266> MPETRFAmp (V)=1.04616666667;
+<Run #268267> MPETRFAmp (V)=1.07693333333;
+<Run #268268> MPETRFAmp (V)=1.1077;
+<Run #268269> MPETRFAmp (V)=1.13846666667;
+<Run #268270> MPETRFAmp (V)=1.16923333333;
+<Run #268271> MPETRFAmp (V)=1.2;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+<Run #268254> MPETRFAmp (V)=0.676966666667;
+<Run #268255> MPETRFAmp (V)=0.707733333333;
+<Run #268256> MPETRFAmp (V)=0.7385;
+<Run #268257> MPETRFAmp (V)=0.769266666667;
+<Run #268258> MPETRFAmp (V)=0.800033333333;
+<Run #268259> MPETRFAmp (V)=0.8308;
+<Run #268260> MPETRFAmp (V)=0.861566666667;
+<Run #268261> MPETRFAmp (V)=0.892333333333;
+<Run #268262> MPETRFAmp (V)=0.9231;
+<Run #268263> MPETRFAmp (V)=0.953866666667;
+<Run #268264> MPETRFAmp (V)=0.984633333333;
+<Run #268265> MPETRFAmp (V)=1.0154;
+<Run #268266> MPETRFAmp (V)=1.04616666667;
+<Run #268267> MPETRFAmp (V)=1.07693333333;
+<Run #268268> MPETRFAmp (V)=1.1077;
+<Run #268269> MPETRFAmp (V)=1.13846666667;
+<Run #268270> MPETRFAmp (V)=1.16923333333;
+<Run #268271> MPETRFAmp (V)=1.2;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+end
+
+<Run #268232> MPETRFAmp (V)=0.0001;
+<Run #268233> MPETRFAmp (V)=0.0308666666667;
+<Run #268234> MPETRFAmp (V)=0.0616333333333;
+<Run #268235> MPETRFAmp (V)=0.0924;
+<Run #268236> MPETRFAmp (V)=0.123166666667;
+<Run #268237> MPETRFAmp (V)=0.153933333333;
+<Run #268238> MPETRFAmp (V)=0.1847;
+<Run #268239> MPETRFAmp (V)=0.215466666667;
+<Run #268240> MPETRFAmp (V)=0.246233333333;
+<Run #268241> MPETRFAmp (V)=0.277;
+<Run #268242> MPETRFAmp (V)=0.307766666667;
+<Run #268243> MPETRFAmp (V)=0.338533333333;
+<Run #268244> MPETRFAmp (V)=0.3693;
+<Run #268245> MPETRFAmp (V)=0.400066666667;
+<Run #268246> MPETRFAmp (V)=0.430833333333;
+<Run #268247> MPETRFAmp (V)=0.4616;
+<Run #268248> MPETRFAmp (V)=0.492366666667;
+<Run #268249> MPETRFAmp (V)=0.523133333333;
+<Run #268250> MPETRFAmp (V)=0.5539;
+<Run #268251> MPETRFAmp (V)=0.584666666667;
+<Run #268252> MPETRFAmp (V)=0.615433333333;
+<Run #268253> MPETRFAmp (V)=0.6462;
+end
+
+<Run #268227> MPETRFAmp (V)=0.0001;
+<Run #268228> MPETRFAmp (V)=0.0308666666667;
+<Run #268229> MPETRFAmp (V)=0.0616333333333;
+<Run #268230> MPETRFAmp (V)=0.0924;
+<Run #268231> MPETRFAmp (V)=0.123166666667;
+end
+
+<Run #268227> MPETRFAmp (V)=0.0001;
+<Run #268228> MPETRFAmp (V)=0.0308666666667;
+<Run #268229> MPETRFAmp (V)=0.0616333333333;
+<Run #268230> MPETRFAmp (V)=0.0924;
+<Run #268231> MPETRFAmp (V)=0.123166666667;
+end
+
+<Run #268227> MPETRFAmp (V)=0.0001;
+<Run #268228> MPETRFAmp (V)=0.0308666666667;
+<Run #268229> MPETRFAmp (V)=0.0616333333333;
+<Run #268230> MPETRFAmp (V)=0.0924;
+<Run #268231> MPETRFAmp (V)=0.123166666667;
+end
+
+<Run #268198> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1000000.0;
+<Run #268199> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1457822.37;
+<Run #268200> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1000000.0;
+<Run #268201> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1457822.37;
+<Run #268202> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1000000.0;
+<Run #268203> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1457822.37;
+<Run #268204> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1000000.0;
+<Run #268205> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1457822.37;
+<Run #268206> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1000000.0;
+<Run #268207> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1457822.37;
+<Run #268208> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1000000.0;
+<Run #268209> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1457822.37;
+<Run #268210> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1000000.0;
+<Run #268211> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1457822.37;
+<Run #268212> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1000000.0;
+<Run #268213> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1457822.37;
+<Run #268214> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1000000.0;
+<Run #268215> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1457822.37;
+<Run #268216> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1000000.0;
+<Run #268217> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1457822.37;
+<Run #268218> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1000000.0;
+<Run #268219> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268198> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1000000.0;
+<Run #268199> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1457822.37;
+<Run #268200> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1000000.0;
+<Run #268201> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1457822.37;
+<Run #268202> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1000000.0;
+<Run #268203> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1457822.37;
+<Run #268204> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1000000.0;
+<Run #268205> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1457822.37;
+<Run #268206> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1000000.0;
+<Run #268207> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1457822.37;
+<Run #268208> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1000000.0;
+<Run #268209> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1457822.37;
+<Run #268210> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1000000.0;
+<Run #268211> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1457822.37;
+<Run #268212> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1000000.0;
+<Run #268213> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1457822.37;
+<Run #268214> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1000000.0;
+<Run #268215> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1457822.37;
+<Run #268216> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1000000.0;
+<Run #268217> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1457822.37;
+<Run #268218> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1000000.0;
+<Run #268219> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268176> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1000000.0;
+<Run #268177> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1457822.37;
+<Run #268178> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1000000.0;
+<Run #268179> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1457822.37;
+<Run #268180> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1000000.0;
+<Run #268181> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1457822.37;
+<Run #268182> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1000000.0;
+<Run #268183> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1457822.37;
+<Run #268184> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1000000.0;
+<Run #268185> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1457822.37;
+<Run #268186> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1000000.0;
+<Run #268187> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1457822.37;
+<Run #268188> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1000000.0;
+<Run #268189> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1457822.37;
+<Run #268190> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1000000.0;
+<Run #268191> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1457822.37;
+<Run #268192> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1000000.0;
+<Run #268193> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1457822.37;
+<Run #268194> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1000000.0;
+<Run #268195> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1457822.37;
+<Run #268196> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1000000.0;
+<Run #268197> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268176> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1000000.0;
+<Run #268177> MPETCaptureDelay (ms)=0.1;;Centre Frequency (Hz)=1457822.37;
+<Run #268178> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1000000.0;
+<Run #268179> MPETCaptureDelay (ms)=0.1003;;Centre Frequency (Hz)=1457822.37;
+<Run #268180> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1000000.0;
+<Run #268181> MPETCaptureDelay (ms)=0.1006;;Centre Frequency (Hz)=1457822.37;
+<Run #268182> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1000000.0;
+<Run #268183> MPETCaptureDelay (ms)=0.1009;;Centre Frequency (Hz)=1457822.37;
+<Run #268184> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1000000.0;
+<Run #268185> MPETCaptureDelay (ms)=0.1012;;Centre Frequency (Hz)=1457822.37;
+<Run #268186> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1000000.0;
+<Run #268187> MPETCaptureDelay (ms)=0.1015;;Centre Frequency (Hz)=1457822.37;
+<Run #268188> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1000000.0;
+<Run #268189> MPETCaptureDelay (ms)=0.1018;;Centre Frequency (Hz)=1457822.37;
+<Run #268190> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1000000.0;
+<Run #268191> MPETCaptureDelay (ms)=0.1021;;Centre Frequency (Hz)=1457822.37;
+<Run #268192> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1000000.0;
+<Run #268193> MPETCaptureDelay (ms)=0.1024;;Centre Frequency (Hz)=1457822.37;
+<Run #268194> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1000000.0;
+<Run #268195> MPETCaptureDelay (ms)=0.1027;;Centre Frequency (Hz)=1457822.37;
+<Run #268196> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1000000.0;
+<Run #268197> MPETCaptureDelay (ms)=0.103;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268154> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268155> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268156> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268157> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268158> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268159> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268160> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268161> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268162> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268163> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268164> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268165> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268166> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268167> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268168> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268169> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268170> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268171> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268172> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268173> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268174> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268175> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268154> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268155> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268156> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268157> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268158> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268159> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268160> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268161> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268162> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268163> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268164> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268165> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268166> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268167> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268168> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268169> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268170> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268171> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268172> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268173> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268174> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268175> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268154> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268155> MPET:PLTM (V)=-235.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268156> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268157> MPET:PLTM (V)=-238.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268158> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268159> MPET:PLTM (V)=-241.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268160> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268161> MPET:PLTM (V)=-244.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268162> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268163> MPET:PLTM (V)=-247.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268164> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268165> MPET:PLTM (V)=-250.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268166> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268167> MPET:PLTM (V)=-253.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268168> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268169> MPET:PLTM (V)=-256.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268170> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268171> MPET:PLTM (V)=-259.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268172> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268173> MPET:PLTM (V)=-262.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268174> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268175> MPET:PLTM (V)=-265.0;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268132> TRFC:PB5 (V)=17920.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268133> TRFC:PB5 (V)=17920.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268134> TRFC:PB5 (V)=17924.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268135> TRFC:PB5 (V)=17924.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268136> TRFC:PB5 (V)=17928.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268137> TRFC:PB5 (V)=17928.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268138> TRFC:PB5 (V)=17932.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268139> TRFC:PB5 (V)=17932.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268140> TRFC:PB5 (V)=17936.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268141> TRFC:PB5 (V)=17936.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268142> TRFC:PB5 (V)=17940.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268143> TRFC:PB5 (V)=17940.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268144> TRFC:PB5 (V)=17944.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268145> TRFC:PB5 (V)=17944.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268146> TRFC:PB5 (V)=17948.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268147> TRFC:PB5 (V)=17948.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268148> TRFC:PB5 (V)=17952.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268149> TRFC:PB5 (V)=17952.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268150> TRFC:PB5 (V)=17956.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268151> TRFC:PB5 (V)=17956.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268152> TRFC:PB5 (V)=17960.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268153> TRFC:PB5 (V)=17960.0;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268132> TRFC:PB5 (V)=17920.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268133> TRFC:PB5 (V)=17920.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268134> TRFC:PB5 (V)=17924.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268135> TRFC:PB5 (V)=17924.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268136> TRFC:PB5 (V)=17928.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268137> TRFC:PB5 (V)=17928.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268138> TRFC:PB5 (V)=17932.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268139> TRFC:PB5 (V)=17932.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268140> TRFC:PB5 (V)=17936.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268141> TRFC:PB5 (V)=17936.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268142> TRFC:PB5 (V)=17940.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268143> TRFC:PB5 (V)=17940.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268144> TRFC:PB5 (V)=17944.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268145> TRFC:PB5 (V)=17944.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268146> TRFC:PB5 (V)=17948.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268147> TRFC:PB5 (V)=17948.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268148> TRFC:PB5 (V)=17952.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268149> TRFC:PB5 (V)=17952.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268150> TRFC:PB5 (V)=17956.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268151> TRFC:PB5 (V)=17956.0;;Centre Frequency (Hz)=1457822.37;
+<Run #268152> TRFC:PB5 (V)=17960.0;;Centre Frequency (Hz)=1000000.0;
+<Run #268153> TRFC:PB5 (V)=17960.0;;Centre Frequency (Hz)=1457822.37;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+<Run #268127> MPET:PLTM (V)=-267.0;
+<Run #268128> MPET:PLTM (V)=-269.5;
+<Run #268129> MPET:PLTM (V)=-272.0;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+end
+
+<Run #268109> MPET:PLTM (V)=-222.0;
+<Run #268110> MPET:PLTM (V)=-224.5;
+<Run #268111> MPET:PLTM (V)=-227.0;
+<Run #268112> MPET:PLTM (V)=-229.5;
+<Run #268113> MPET:PLTM (V)=-232.0;
+<Run #268114> MPET:PLTM (V)=-234.5;
+<Run #268115> MPET:PLTM (V)=-237.0;
+<Run #268116> MPET:PLTM (V)=-239.5;
+<Run #268117> MPET:PLTM (V)=-242.0;
+<Run #268118> MPET:PLTM (V)=-244.5;
+<Run #268119> MPET:PLTM (V)=-247.0;
+<Run #268120> MPET:PLTM (V)=-249.5;
+<Run #268121> MPET:PLTM (V)=-252.0;
+<Run #268122> MPET:PLTM (V)=-254.5;
+<Run #268123> MPET:PLTM (V)=-257.0;
+<Run #268124> MPET:PLTM (V)=-259.5;
+<Run #268125> MPET:PLTM (V)=-262.0;
+<Run #268126> MPET:PLTM (V)=-264.5;
+end
+
+<Run #268096> TSYBL:EL1 (V)=1800.0;
+<Run #268097> TSYBL:EL1 (V)=1870.0;
+<Run #268098> TSYBL:EL1 (V)=1940.0;
+<Run #268099> TSYBL:EL1 (V)=2010.0;
+<Run #268100> TSYBL:EL1 (V)=2080.0;
+<Run #268101> TSYBL:EL1 (V)=2150.0;
+<Run #268102> TSYBL:EL1 (V)=2220.0;
+<Run #268103> TSYBL:EL1 (V)=2290.0;
+<Run #268104> TSYBL:EL1 (V)=2360.0;
+<Run #268105> TSYBL:EL1 (V)=2430.0;
+<Run #268106> TSYBL:EL1 (V)=2500.0;
+end
+
+<Run #268096> TSYBL:EL1 (V)=1800.0;
+<Run #268097> TSYBL:EL1 (V)=1870.0;
+<Run #268098> TSYBL:EL1 (V)=1940.0;
+<Run #268099> TSYBL:EL1 (V)=2010.0;
+<Run #268100> TSYBL:EL1 (V)=2080.0;
+<Run #268101> TSYBL:EL1 (V)=2150.0;
+<Run #268102> TSYBL:EL1 (V)=2220.0;
+<Run #268103> TSYBL:EL1 (V)=2290.0;
+<Run #268104> TSYBL:EL1 (V)=2360.0;
+<Run #268105> TSYBL:EL1 (V)=2430.0;
+<Run #268106> TSYBL:EL1 (V)=2500.0;
+end
+
+<Run #268085> TSYBL:EL3 (V)=2150.0;
+<Run #268086> TSYBL:EL3 (V)=2250.0;
+<Run #268087> TSYBL:EL3 (V)=2350.0;
+<Run #268088> TSYBL:EL3 (V)=2450.0;
+<Run #268089> TSYBL:EL3 (V)=2550.0;
+<Run #268090> TSYBL:EL3 (V)=2650.0;
+<Run #268091> TSYBL:EL3 (V)=2750.0;
+<Run #268092> TSYBL:EL3 (V)=2850.0;
+<Run #268093> TSYBL:EL3 (V)=2950.0;
+<Run #268094> TSYBL:EL3 (V)=3050.0;
+<Run #268095> TSYBL:EL3 (V)=3150.0;
+end
+
+<Run #268085> TSYBL:EL3 (V)=2150.0;
+<Run #268086> TSYBL:EL3 (V)=2250.0;
+<Run #268087> TSYBL:EL3 (V)=2350.0;
+<Run #268088> TSYBL:EL3 (V)=2450.0;
+<Run #268089> TSYBL:EL3 (V)=2550.0;
+<Run #268090> TSYBL:EL3 (V)=2650.0;
+<Run #268091> TSYBL:EL3 (V)=2750.0;
+<Run #268092> TSYBL:EL3 (V)=2850.0;
+<Run #268093> TSYBL:EL3 (V)=2950.0;
+<Run #268094> TSYBL:EL3 (V)=3050.0;
+<Run #268095> TSYBL:EL3 (V)=3150.0;
+end
+
+<Run #268085> TSYBL:EL3 (V)=2150.0;
+<Run #268086> TSYBL:EL3 (V)=2250.0;
+<Run #268087> TSYBL:EL3 (V)=2350.0;
+<Run #268088> TSYBL:EL3 (V)=2450.0;
+<Run #268089> TSYBL:EL3 (V)=2550.0;
+<Run #268090> TSYBL:EL3 (V)=2650.0;
+<Run #268091> TSYBL:EL3 (V)=2750.0;
+<Run #268092> TSYBL:EL3 (V)=2850.0;
+<Run #268093> TSYBL:EL3 (V)=2950.0;
+<Run #268094> TSYBL:EL3 (V)=3050.0;
+<Run #268095> TSYBL:EL3 (V)=3150.0;
+end
+
+<Run #268074> TSYBL:EL4 (V)=2200.0;
+<Run #268075> TSYBL:EL4 (V)=2300.0;
+<Run #268076> TSYBL:EL4 (V)=2400.0;
+<Run #268077> TSYBL:EL4 (V)=2500.0;
+<Run #268078> TSYBL:EL4 (V)=2600.0;
+<Run #268079> TSYBL:EL4 (V)=2700.0;
+<Run #268080> TSYBL:EL4 (V)=2800.0;
+<Run #268081> TSYBL:EL4 (V)=2900.0;
+<Run #268082> TSYBL:EL4 (V)=3000.0;
+<Run #268083> TSYBL:EL4 (V)=3100.0;
+<Run #268084> TSYBL:EL4 (V)=3200.0;
+end
+
+<Run #268074> TSYBL:EL4 (V)=2200.0;
+<Run #268075> TSYBL:EL4 (V)=2300.0;
+<Run #268076> TSYBL:EL4 (V)=2400.0;
+<Run #268077> TSYBL:EL4 (V)=2500.0;
+<Run #268078> TSYBL:EL4 (V)=2600.0;
+<Run #268079> TSYBL:EL4 (V)=2700.0;
+<Run #268080> TSYBL:EL4 (V)=2800.0;
+<Run #268081> TSYBL:EL4 (V)=2900.0;
+<Run #268082> TSYBL:EL4 (V)=3000.0;
+<Run #268083> TSYBL:EL4 (V)=3100.0;
+<Run #268084> TSYBL:EL4 (V)=3200.0;
+end
+
+<Run #268063> MPETBL:EL2 (V)=1650.0;
+<Run #268064> MPETBL:EL2 (V)=1750.0;
+<Run #268065> MPETBL:EL2 (V)=1850.0;
+<Run #268066> MPETBL:EL2 (V)=1950.0;
+<Run #268067> MPETBL:EL2 (V)=2050.0;
+<Run #268068> MPETBL:EL2 (V)=2150.0;
+<Run #268069> MPETBL:EL2 (V)=2250.0;
+<Run #268070> MPETBL:EL2 (V)=2350.0;
+<Run #268071> MPETBL:EL2 (V)=2450.0;
+<Run #268072> MPETBL:EL2 (V)=2550.0;
+<Run #268073> MPETBL:EL2 (V)=2650.0;
+end
+
+<Run #268063> MPETBL:EL2 (V)=1650.0;
+<Run #268064> MPETBL:EL2 (V)=1750.0;
+<Run #268065> MPETBL:EL2 (V)=1850.0;
+<Run #268066> MPETBL:EL2 (V)=1950.0;
+<Run #268067> MPETBL:EL2 (V)=2050.0;
+<Run #268068> MPETBL:EL2 (V)=2150.0;
+<Run #268069> MPETBL:EL2 (V)=2250.0;
+<Run #268070> MPETBL:EL2 (V)=2350.0;
+<Run #268071> MPETBL:EL2 (V)=2450.0;
+<Run #268072> MPETBL:EL2 (V)=2550.0;
+<Run #268073> MPETBL:EL2 (V)=2650.0;
+end
+
+<Run #268052> TRFCBL:XCB4 (V)=80.0;
+<Run #268053> TRFCBL:XCB4 (V)=84.0;
+<Run #268054> TRFCBL:XCB4 (V)=88.0;
+<Run #268055> TRFCBL:XCB4 (V)=92.0;
+<Run #268056> TRFCBL:XCB4 (V)=96.0;
+<Run #268057> TRFCBL:XCB4 (V)=100.0;
+<Run #268058> TRFCBL:XCB4 (V)=104.0;
+<Run #268059> TRFCBL:XCB4 (V)=108.0;
+<Run #268060> TRFCBL:XCB4 (V)=112.0;
+<Run #268061> TRFCBL:XCB4 (V)=116.0;
+<Run #268062> TRFCBL:XCB4 (V)=120.0;
+end
+
+<Run #268041> TRFCBL:YCB4 (V)=180.0;
+<Run #268042> TRFCBL:YCB4 (V)=184.0;
+<Run #268043> TRFCBL:YCB4 (V)=188.0;
+<Run #268044> TRFCBL:YCB4 (V)=192.0;
+<Run #268045> TRFCBL:YCB4 (V)=196.0;
+<Run #268046> TRFCBL:YCB4 (V)=200.0;
+<Run #268047> TRFCBL:YCB4 (V)=204.0;
+<Run #268048> TRFCBL:YCB4 (V)=208.0;
+<Run #268049> TRFCBL:YCB4 (V)=212.0;
+<Run #268050> TRFCBL:YCB4 (V)=216.0;
+<Run #268051> TRFCBL:YCB4 (V)=220.0;
+end
+
+<Run #268041> TRFCBL:YCB4 (V)=180.0;
+<Run #268042> TRFCBL:YCB4 (V)=184.0;
+<Run #268043> TRFCBL:YCB4 (V)=188.0;
+<Run #268044> TRFCBL:YCB4 (V)=192.0;
+<Run #268045> TRFCBL:YCB4 (V)=196.0;
+<Run #268046> TRFCBL:YCB4 (V)=200.0;
+<Run #268047> TRFCBL:YCB4 (V)=204.0;
+<Run #268048> TRFCBL:YCB4 (V)=208.0;
+<Run #268049> TRFCBL:YCB4 (V)=212.0;
+<Run #268050> TRFCBL:YCB4 (V)=216.0;
+<Run #268051> TRFCBL:YCB4 (V)=220.0;
+end
+
+<Run #268030> TRFC:EL5 (V)=-1500.0;
+<Run #268031> TRFC:EL5 (V)=-1700.0;
+<Run #268032> TRFC:EL5 (V)=-1900.0;
+<Run #268033> TRFC:EL5 (V)=-2100.0;
+<Run #268034> TRFC:EL5 (V)=-2300.0;
+<Run #268035> TRFC:EL5 (V)=-2500.0;
+<Run #268036> TRFC:EL5 (V)=-2700.0;
+<Run #268037> TRFC:EL5 (V)=-2900.0;
+<Run #268038> TRFC:EL5 (V)=-3100.0;
+<Run #268039> TRFC:EL5 (V)=-3300.0;
+<Run #268040> TRFC:EL5 (V)=-3500.0;
+end
+
+<Run #268030> TRFC:EL5 (V)=-1500.0;
+<Run #268031> TRFC:EL5 (V)=-1700.0;
+<Run #268032> TRFC:EL5 (V)=-1900.0;
+<Run #268033> TRFC:EL5 (V)=-2100.0;
+<Run #268034> TRFC:EL5 (V)=-2300.0;
+<Run #268035> TRFC:EL5 (V)=-2500.0;
+<Run #268036> TRFC:EL5 (V)=-2700.0;
+<Run #268037> TRFC:EL5 (V)=-2900.0;
+<Run #268038> TRFC:EL5 (V)=-3100.0;
+<Run #268039> TRFC:EL5 (V)=-3300.0;
+<Run #268040> TRFC:EL5 (V)=-3500.0;
+end
+
+<Run #268019> TRFCBL:Q1:A (V)=-8.0;
+<Run #268020> TRFCBL:Q1:A (V)=-5.4;
+<Run #268021> TRFCBL:Q1:A (V)=-2.8;
+<Run #268022> TRFCBL:Q1:A (V)=-0.2;
+<Run #268023> TRFCBL:Q1:A (V)=2.4;
+<Run #268024> TRFCBL:Q1:A (V)=5.0;
+<Run #268025> TRFCBL:Q1:A (V)=7.6;
+<Run #268026> TRFCBL:Q1:A (V)=10.2;
+<Run #268027> TRFCBL:Q1:A (V)=12.8;
+<Run #268028> TRFCBL:Q1:A (V)=15.4;
+<Run #268029> TRFCBL:Q1:A (V)=18.0;
+end
+
+<Run #268019> TRFCBL:Q1:A (V)=-8.0;
+<Run #268020> TRFCBL:Q1:A (V)=-5.4;
+<Run #268021> TRFCBL:Q1:A (V)=-2.8;
+<Run #268022> TRFCBL:Q1:A (V)=-0.2;
+<Run #268023> TRFCBL:Q1:A (V)=2.4;
+<Run #268024> TRFCBL:Q1:A (V)=5.0;
+<Run #268025> TRFCBL:Q1:A (V)=7.6;
+<Run #268026> TRFCBL:Q1:A (V)=10.2;
+<Run #268027> TRFCBL:Q1:A (V)=12.8;
+<Run #268028> TRFCBL:Q1:A (V)=15.4;
+<Run #268029> TRFCBL:Q1:A (V)=18.0;
+end
+
+<Run #268008> TRFCBL:Q1:C=220.0;
+<Run #268009> TRFCBL:Q1:C=226.0;
+<Run #268010> TRFCBL:Q1:C=232.0;
+<Run #268011> TRFCBL:Q1:C=238.0;
+<Run #268012> TRFCBL:Q1:C=244.0;
+<Run #268013> TRFCBL:Q1:C=250.0;
+<Run #268014> TRFCBL:Q1:C=256.0;
+<Run #268015> TRFCBL:Q1:C=262.0;
+<Run #268016> TRFCBL:Q1:C=268.0;
+<Run #268017> TRFCBL:Q1:C=274.0;
+<Run #268018> TRFCBL:Q1:C=280.0;
+end
+
+<Run #268008> TRFCBL:Q1:C=220.0;
+<Run #268009> TRFCBL:Q1:C=226.0;
+<Run #268010> TRFCBL:Q1:C=232.0;
+<Run #268011> TRFCBL:Q1:C=238.0;
+<Run #268012> TRFCBL:Q1:C=244.0;
+<Run #268013> TRFCBL:Q1:C=250.0;
+<Run #268014> TRFCBL:Q1:C=256.0;
+<Run #268015> TRFCBL:Q1:C=262.0;
+<Run #268016> TRFCBL:Q1:C=268.0;
+<Run #268017> TRFCBL:Q1:C=274.0;
+<Run #268018> TRFCBL:Q1:C=280.0;
+end
+
+<Run #268008> TRFCBL:Q1:C=220.0;
+<Run #268009> TRFCBL:Q1:C=226.0;
+<Run #268010> TRFCBL:Q1:C=232.0;
+<Run #268011> TRFCBL:Q1:C=238.0;
+<Run #268012> TRFCBL:Q1:C=244.0;
+<Run #268013> TRFCBL:Q1:C=250.0;
+<Run #268014> TRFCBL:Q1:C=256.0;
+<Run #268015> TRFCBL:Q1:C=262.0;
+<Run #268016> TRFCBL:Q1:C=268.0;
+<Run #268017> TRFCBL:Q1:C=274.0;
+<Run #268018> TRFCBL:Q1:C=280.0;
+end
+
+<Run #267997> TRFCBL:Q1:C=235.0;
+<Run #267998> TRFCBL:Q1:C=238.0;
+<Run #267999> TRFCBL:Q1:C=241.0;
+<Run #268000> TRFCBL:Q1:C=244.0;
+<Run #268001> TRFCBL:Q1:C=247.0;
+<Run #268002> TRFCBL:Q1:C=250.0;
+<Run #268003> TRFCBL:Q1:C=253.0;
+<Run #268004> TRFCBL:Q1:C=256.0;
+<Run #268005> TRFCBL:Q1:C=259.0;
+<Run #268006> TRFCBL:Q1:C=262.0;
+<Run #268007> TRFCBL:Q1:C=265.0;
+end
+
+<Run #267997> TRFCBL:Q1:C=235.0;
+<Run #267998> TRFCBL:Q1:C=238.0;
+<Run #267999> TRFCBL:Q1:C=241.0;
+<Run #268000> TRFCBL:Q1:C=244.0;
+<Run #268001> TRFCBL:Q1:C=247.0;
+<Run #268002> TRFCBL:Q1:C=250.0;
+<Run #268003> TRFCBL:Q1:C=253.0;
+<Run #268004> TRFCBL:Q1:C=256.0;
+<Run #268005> TRFCBL:Q1:C=259.0;
+<Run #268006> TRFCBL:Q1:C=262.0;
+<Run #268007> TRFCBL:Q1:C=265.0;
+end
+
+<Run #267986> TSYBL:EL1 (V)=1950.0;
+<Run #267987> TSYBL:EL1 (V)=1990.0;
+<Run #267988> TSYBL:EL1 (V)=2030.0;
+<Run #267989> TSYBL:EL1 (V)=2070.0;
+<Run #267990> TSYBL:EL1 (V)=2110.0;
+<Run #267991> TSYBL:EL1 (V)=2150.0;
+<Run #267992> TSYBL:EL1 (V)=2190.0;
+<Run #267993> TSYBL:EL1 (V)=2230.0;
+<Run #267994> TSYBL:EL1 (V)=2270.0;
+<Run #267995> TSYBL:EL1 (V)=2310.0;
+<Run #267996> TSYBL:EL1 (V)=2350.0;
+end
+
+<Run #267975> TSYBL:EL1 (V)=1650.0;
+<Run #267976> TSYBL:EL1 (V)=1750.0;
+<Run #267977> TSYBL:EL1 (V)=1850.0;
+<Run #267978> TSYBL:EL1 (V)=1950.0;
+<Run #267979> TSYBL:EL1 (V)=2050.0;
+<Run #267980> TSYBL:EL1 (V)=2150.0;
+<Run #267981> TSYBL:EL1 (V)=2250.0;
+<Run #267982> TSYBL:EL1 (V)=2350.0;
+<Run #267983> TSYBL:EL1 (V)=2450.0;
+<Run #267984> TSYBL:EL1 (V)=2550.0;
+<Run #267985> TSYBL:EL1 (V)=2650.0;
+end
+
+<Run #267975> TSYBL:EL1 (V)=1650.0;
+<Run #267976> TSYBL:EL1 (V)=1750.0;
+<Run #267977> TSYBL:EL1 (V)=1850.0;
+<Run #267978> TSYBL:EL1 (V)=1950.0;
+<Run #267979> TSYBL:EL1 (V)=2050.0;
+<Run #267980> TSYBL:EL1 (V)=2150.0;
+<Run #267981> TSYBL:EL1 (V)=2250.0;
+<Run #267982> TSYBL:EL1 (V)=2350.0;
+<Run #267983> TSYBL:EL1 (V)=2450.0;
+<Run #267984> TSYBL:EL1 (V)=2550.0;
+<Run #267985> TSYBL:EL1 (V)=2650.0;
+end
+
+<Run #267975> TSYBL:EL1 (V)=1650.0;
+<Run #267976> TSYBL:EL1 (V)=1750.0;
+<Run #267977> TSYBL:EL1 (V)=1850.0;
+<Run #267978> TSYBL:EL1 (V)=1950.0;
+<Run #267979> TSYBL:EL1 (V)=2050.0;
+<Run #267980> TSYBL:EL1 (V)=2150.0;
+<Run #267981> TSYBL:EL1 (V)=2250.0;
+<Run #267982> TSYBL:EL1 (V)=2350.0;
+<Run #267983> TSYBL:EL1 (V)=2450.0;
+<Run #267984> TSYBL:EL1 (V)=2550.0;
+<Run #267985> TSYBL:EL1 (V)=2650.0;
+end
+
+<Run #267964> TSYBL:EL3 (V)=2550.0;
+<Run #267965> TSYBL:EL3 (V)=2570.0;
+<Run #267966> TSYBL:EL3 (V)=2590.0;
+<Run #267967> TSYBL:EL3 (V)=2610.0;
+<Run #267968> TSYBL:EL3 (V)=2630.0;
+<Run #267969> TSYBL:EL3 (V)=2650.0;
+<Run #267970> TSYBL:EL3 (V)=2670.0;
+<Run #267971> TSYBL:EL3 (V)=2690.0;
+<Run #267972> TSYBL:EL3 (V)=2710.0;
+<Run #267973> TSYBL:EL3 (V)=2730.0;
+<Run #267974> TSYBL:EL3 (V)=2750.0;
+end
+
+<Run #267964> TSYBL:EL3 (V)=2550.0;
+<Run #267965> TSYBL:EL3 (V)=2570.0;
+<Run #267966> TSYBL:EL3 (V)=2590.0;
+<Run #267967> TSYBL:EL3 (V)=2610.0;
+<Run #267968> TSYBL:EL3 (V)=2630.0;
+<Run #267969> TSYBL:EL3 (V)=2650.0;
+<Run #267970> TSYBL:EL3 (V)=2670.0;
+<Run #267971> TSYBL:EL3 (V)=2690.0;
+<Run #267972> TSYBL:EL3 (V)=2710.0;
+<Run #267973> TSYBL:EL3 (V)=2730.0;
+<Run #267974> TSYBL:EL3 (V)=2750.0;
+end
+
+<Run #267964> TSYBL:EL3 (V)=2550.0;
+<Run #267965> TSYBL:EL3 (V)=2570.0;
+<Run #267966> TSYBL:EL3 (V)=2590.0;
+<Run #267967> TSYBL:EL3 (V)=2610.0;
+<Run #267968> TSYBL:EL3 (V)=2630.0;
+<Run #267969> TSYBL:EL3 (V)=2650.0;
+<Run #267970> TSYBL:EL3 (V)=2670.0;
+<Run #267971> TSYBL:EL3 (V)=2690.0;
+<Run #267972> TSYBL:EL3 (V)=2710.0;
+<Run #267973> TSYBL:EL3 (V)=2730.0;
+<Run #267974> TSYBL:EL3 (V)=2750.0;
+end
+
+<Run #267953> TSYBL:EL3 (V)=2150.0;
+<Run #267954> TSYBL:EL3 (V)=2250.0;
+<Run #267955> TSYBL:EL3 (V)=2350.0;
+<Run #267956> TSYBL:EL3 (V)=2450.0;
+<Run #267957> TSYBL:EL3 (V)=2550.0;
+<Run #267958> TSYBL:EL3 (V)=2650.0;
+<Run #267959> TSYBL:EL3 (V)=2750.0;
+<Run #267960> TSYBL:EL3 (V)=2850.0;
+<Run #267961> TSYBL:EL3 (V)=2950.0;
+<Run #267962> TSYBL:EL3 (V)=3050.0;
+<Run #267963> TSYBL:EL3 (V)=3150.0;
+end
+
+<Run #267953> TSYBL:EL3 (V)=2150.0;
+<Run #267954> TSYBL:EL3 (V)=2250.0;
+<Run #267955> TSYBL:EL3 (V)=2350.0;
+<Run #267956> TSYBL:EL3 (V)=2450.0;
+<Run #267957> TSYBL:EL3 (V)=2550.0;
+<Run #267958> TSYBL:EL3 (V)=2650.0;
+<Run #267959> TSYBL:EL3 (V)=2750.0;
+<Run #267960> TSYBL:EL3 (V)=2850.0;
+<Run #267961> TSYBL:EL3 (V)=2950.0;
+<Run #267962> TSYBL:EL3 (V)=3050.0;
+<Run #267963> TSYBL:EL3 (V)=3150.0;
+end
+
+<Run #267942> TSYBL:EL4 (V)=2150.0;
+<Run #267943> TSYBL:EL4 (V)=2250.0;
+<Run #267944> TSYBL:EL4 (V)=2350.0;
+<Run #267945> TSYBL:EL4 (V)=2450.0;
+<Run #267946> TSYBL:EL4 (V)=2550.0;
+<Run #267947> TSYBL:EL4 (V)=2650.0;
+<Run #267948> TSYBL:EL4 (V)=2750.0;
+<Run #267949> TSYBL:EL4 (V)=2850.0;
+<Run #267950> TSYBL:EL4 (V)=2950.0;
+<Run #267951> TSYBL:EL4 (V)=3050.0;
+<Run #267952> TSYBL:EL4 (V)=3150.0;
+end
+
+<Run #267942> TSYBL:EL4 (V)=2150.0;
+<Run #267943> TSYBL:EL4 (V)=2250.0;
+<Run #267944> TSYBL:EL4 (V)=2350.0;
+<Run #267945> TSYBL:EL4 (V)=2450.0;
+<Run #267946> TSYBL:EL4 (V)=2550.0;
+<Run #267947> TSYBL:EL4 (V)=2650.0;
+<Run #267948> TSYBL:EL4 (V)=2750.0;
+<Run #267949> TSYBL:EL4 (V)=2850.0;
+<Run #267950> TSYBL:EL4 (V)=2950.0;
+<Run #267951> TSYBL:EL4 (V)=3050.0;
+<Run #267952> TSYBL:EL4 (V)=3150.0;
+end
+
+<Run #267942> TSYBL:EL4 (V)=2150.0;
+<Run #267943> TSYBL:EL4 (V)=2250.0;
+<Run #267944> TSYBL:EL4 (V)=2350.0;
+<Run #267945> TSYBL:EL4 (V)=2450.0;
+<Run #267946> TSYBL:EL4 (V)=2550.0;
+<Run #267947> TSYBL:EL4 (V)=2650.0;
+<Run #267948> TSYBL:EL4 (V)=2750.0;
+<Run #267949> TSYBL:EL4 (V)=2850.0;
+<Run #267950> TSYBL:EL4 (V)=2950.0;
+<Run #267951> TSYBL:EL4 (V)=3050.0;
+<Run #267952> TSYBL:EL4 (V)=3150.0;
+end
+
+<Run #267931> MPETBL:EL2 (V)=1650.0;
+<Run #267932> MPETBL:EL2 (V)=1750.0;
+<Run #267933> MPETBL:EL2 (V)=1850.0;
+<Run #267934> MPETBL:EL2 (V)=1950.0;
+<Run #267935> MPETBL:EL2 (V)=2050.0;
+<Run #267936> MPETBL:EL2 (V)=2150.0;
+<Run #267937> MPETBL:EL2 (V)=2250.0;
+<Run #267938> MPETBL:EL2 (V)=2350.0;
+<Run #267939> MPETBL:EL2 (V)=2450.0;
+<Run #267940> MPETBL:EL2 (V)=2550.0;
+<Run #267941> MPETBL:EL2 (V)=2650.0;
+end
+
+<Run #267931> MPETBL:EL2 (V)=1650.0;
+<Run #267932> MPETBL:EL2 (V)=1750.0;
+<Run #267933> MPETBL:EL2 (V)=1850.0;
+<Run #267934> MPETBL:EL2 (V)=1950.0;
+<Run #267935> MPETBL:EL2 (V)=2050.0;
+<Run #267936> MPETBL:EL2 (V)=2150.0;
+<Run #267937> MPETBL:EL2 (V)=2250.0;
+<Run #267938> MPETBL:EL2 (V)=2350.0;
+<Run #267939> MPETBL:EL2 (V)=2450.0;
+<Run #267940> MPETBL:EL2 (V)=2550.0;
+<Run #267941> MPETBL:EL2 (V)=2650.0;
+end
+
 <Run #267910> MPET:PLTM (V)=-222.0;
 <Run #267911> MPET:PLTM (V)=-224.5;
 <Run #267912> MPET:PLTM (V)=-227.0;

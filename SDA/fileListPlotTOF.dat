@@ -1,25 +1,15 @@
-21 150
+40 90
 /home/mpet/local/scripts/SDA/data/
 0
 MPET:PLTM (V)
-run267910_se_test.dat -222.0
-run267911_se_test.dat -224.5
-run267912_se_test.dat -227.0
-run267913_se_test.dat -229.5
-run267914_se_test.dat -232.0
-run267915_se_test.dat -234.5
-run267916_se_test.dat -237.0
-run267917_se_test.dat -239.5
-run267918_se_test.dat -242.0
-run267919_se_test.dat -244.5
-run267920_se_test.dat -247.0
-run267921_se_test.dat -249.5
-run267922_se_test.dat -252.0
-run267923_se_test.dat -254.5
-run267924_se_test.dat -257.0
-run267925_se_test.dat -259.5
-run267926_se_test.dat -262.0
-run267927_se_test.dat -264.5
-run267928_se_test.dat -267.0
-run267929_se_test.dat -269.5
-run267930_se_test.dat -272.0
+run268387_se_test.dat -240.0
+run268388_se_test.dat -242.0
+run268389_se_test.dat -244.0
+run268390_se_test.dat -246.0
+run268391_se_test.dat -248.0
+run268392_se_test.dat -250.0
+run268393_se_test.dat -252.0
+run268394_se_test.dat -254.0
+run268395_se_test.dat -256.0
+run268396_se_test.dat -258.0
+run268397_se_test.dat -260.0

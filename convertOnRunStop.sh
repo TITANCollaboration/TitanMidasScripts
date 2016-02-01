@@ -6,6 +6,7 @@
 # Get name of last written file
 path=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Data dir"'`
 path=`echo $path | awk '{print $3}'`
+path='/titan/data1/mpet'
 #echo $path
 filename=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Channels/0/Settings/Current Filename"'`
 filename=`echo $filename | awk '{print $3}'`
@@ -66,6 +67,8 @@ filename=$path"/"$filename
 
 # convert the file on lxmpet
 #ssh mpet@lxmpet "m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename"
-`m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename`
+# We don't need the RFAmp anymore, so ignore it
+#`m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename`
+result=`m2e -d/titan/data1/mpet/evafiles/ $filename`
 message="Done conversion of file: $filename"
-`odb -e $MIDAS_EXPT_NAME -c "msg 'at_run_stop'  '$message' "`
+result=`odb -e $MIDAS_EXPT_NAME -c "msg 'at_run_stop'  '$message' "`
