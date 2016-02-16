@@ -31,11 +31,13 @@ class StandAloneTests(TestCase):
     def test_StringListToFloatList_trapVoltage(self):
         """Test StringListToFloatList for simulated trap volatges"""
         teststr = prc.StringToList("(1,1) (2,2)(3,3)     (4    ,    4)")
-        expected = np.array([[1, 1], [2, 2], [3, 3], [4, 4]])
+        expected = [np.array([[1, 1], [2, 2], [3, 3], [4, 4]])]
         result = prc.StringListToFloatList(teststr)
         print expected
-        for i in range(expected.shape[0]):
-            self.assertEqual(tuple(result[i]), tuple(expected[i]))
+        print result
+        for i in range(expected[0].shape[0]):
+            #print result[i], expected[i]
+            self.assertTupleEqual(tuple(result[0][i]), tuple(expected[0][i]))
 
     def test_GetVariableStepSize(self):
         """Test GetVariableStepSize"""

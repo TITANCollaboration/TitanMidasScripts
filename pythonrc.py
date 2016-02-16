@@ -56,8 +56,10 @@ def StringListToFloatList(strList):
         if re.search("^\s*\(.+\)\s*$", x):
             # split on ")(" (back to back parentheses), allowing for
             # any amount of white space in between.
-            templist = np.array(map(eval, re.sub("\)\s*\(",
-                                                 ");(", x).split(';')))
+            #templist = np.array(map(eval, re.sub("\)\s*\(",
+            #                                     ");(", x).split(';')))
+            templist.append(np.array(map(eval, re.sub("\)\s*\(",
+                                                      ");(", x).split(';'))))
         else:
             templist.append(float(x))
     return templist
