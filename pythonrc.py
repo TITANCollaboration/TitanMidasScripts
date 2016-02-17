@@ -70,10 +70,13 @@ def GetVariableStepSize(varStart, varStop, nVarStep):
     GetVariableStepSize(varListStart,varListStop,nVarStep) returns a list
     with the variable step size based on the given lists. Lists must be floats
     or ints. Note that the lists must be the same length (function does not
-    check for this). The number of steps must be greater than 1, otherwise a
-    divide by zero will occur.
+    check for this).
+    If the number of steps is 1, then the function will return varStart.
     """
-    return (varStop - varStart) / (nVarStep - 1.)
+    if nVarStep > 1:
+        return (varStop - varStart) / (nVarStep - 1.)
+    else:
+        return varStart
 
 
 def NextVariableSetPoint(VarStart, VarStop, nVarStep, currStep):

@@ -49,6 +49,10 @@ class StandAloneTests(TestCase):
         expected = 1.0
         self.assertEqual(teststep, expected)
 
+        teststep = prc.GetVariableStepSize(-10, 10, 1)
+        expected = -10.0
+        self.assertEqual(teststep, expected)
+
     def test_GetVariableStepSize_trapVoltage(self):
         """Test GetVariableStepSize for simulated trap voltages"""
         trapStart = np.array([2.0, 0.0000])
