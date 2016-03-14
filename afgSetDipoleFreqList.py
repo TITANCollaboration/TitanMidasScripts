@@ -7,9 +7,21 @@
 import afg
 
 #afg = sdf.SwiftDipole()
-myafg = afg.swift_afg()
+try:
+    myafg = afg.swift_afg()
+    myafg.afgSetTigger()
+    myafg.afgSetOutputLoad()
+    myafg.afgSetFreqList()
+    myafg.closeConnection()
+except:
+    pass
 
-myafg.afgSetOutputLoad()
-myafg.afgSetTigger()
-myafg.afgSetFreqList()
-myafg.closeConnection()
+# If an afg is to be in burst mode, program it here
+try:
+    burst = afg.burst_afg()
+    burst.afgSetTigger()
+    burst.afgSetOutputLoad()
+    burst.afgSetFreqList()
+    burst.closeConnection()
+except:
+    pass

@@ -35,7 +35,8 @@ if CurrentTime - FirstTriggered < 10:
 
     SUBJECT = "ALARM: MpetVacuum"
 
-    TEXT = "Vacuum Alarm in MPET.\n"
+    TEXT = "Vacuum Alarm in MPET.\n\n"
+    TEXT += "Please reset the Alarm on 'titan01.triumf.ca:8080'.\n\n"
     vaclevel = Midas.varget("/Equipment/Beamline/Variables/Measured[58]")
     TEXT += "Current Vacuum = %s Torr\n" % vaclevel
     #TEXT += "This is a test of the email list. Please ignore."
