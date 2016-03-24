@@ -6,16 +6,16 @@
 # Get name of last written file
 path=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Data dir"'`
 path=`echo $path | awk '{print $3}'`
-path='/titan/data1/mpet'
-#echo $path
+#path='/titan/data1/mpet'
+echo "Data Dir: " $path
 filename=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Channels/0/Settings/Current Filename"'`
 filename=`echo $filename | awk '{print $3}'`
-#echo $filename
+echo "Filename: " $filename
 
 # Check to see if the data was being written
 wdata=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Write data"'`
 wdata=`echo $wdata | awk '{print $3}'`
-#echo $wdata
+echo "Write Data?" $wdata
 
 # Check to make sure this isn't a PerlRC run
 PRC=`odb -e $MIDAS_EXPT_NAME -c 'ls "/PerlRC/RunControl/RCActive"'`
@@ -29,7 +29,7 @@ TuneSwitch=`echo $TuneSwitch | awk '{print $2}'`
 # Check to see if the user wants to convert
 convert=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Experiment/Variables/Convert File"'`
 convert=`echo $convert | awk '{print $3}'`
-#echo $convert
+echo "Convert file?" $convert
 
 #check to see if Ramsey mode:
 Ramsey=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Equipment/TITAN_ACQ/ppg cycle/"'`
@@ -38,7 +38,7 @@ Ramsey=`echo $Ramsey | grep QUAD3`
 if [ "$wdata" == "n" ]
 then
    # data was not written
-  # echo Data was not written.
+   echo Data was not written.
    exit
 fi
 #python /home/mpet/Aaron/TitanMidasScripts/getFreqC.py
@@ -50,7 +50,7 @@ fi
 if [ "$convert" == "n" ]
 then
    # Convert checkbox now clicked.
-   #echo User does not wish to convert.
+   echo User does not wish to convert.
    exit
 fi
 
@@ -69,6 +69,15 @@ filename=$path"/"$filename
 #ssh mpet@lxmpet "m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename"
 # We don't need the RFAmp anymore, so ignore it
 #`m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename`
-result=`m2e -d/titan/data1/mpet/evafiles/ $filename`
-message="Done conversion of file: $filename"
-result=`odb -e $MIDAS_EXPT_NAME -c "msg 'at_run_stop'  '$message' "`
+result=`/home/mpet/local/bin/python2.7 /home/mpet/local/scripts/m2e.py -d/titan/data1/mpet/evafiles/ $filename 2>&1`
+#result=`/home/mpet/Aaron/scratch/error.py 2>&1`
+error=$?
+echo $result
+if [ "$error" == "0" ]
+then
+	message="Done conversion of file: $filename"
+else
+	message="Error converting file: $filename Please check if file exists, or if there is a cycle number problem"
+fi
+echo $message
+odbmessage=`odb -e $MIDAS_EXPT_NAME -c "msg 'at_run_stop'  '$message' "`
