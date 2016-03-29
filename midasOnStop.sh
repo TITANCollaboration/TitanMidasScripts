@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# 2015.10.13 ATG
-# The old ODB command was: /home/mpet/mb/perlrcmb.sh &
-# This file was created to help centralize all of the MIDAS scripts
-
 # Convert the file on run stop
-#sh /home/mpet/Aaron/TitanMidasScripts/convertOnRunStop.sh
 sh /home/mpet/local/scripts/convertOnRunStop.sh
 
 # Run python run control script

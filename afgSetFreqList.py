@@ -1,8 +1,4 @@
 #!/home/mpet/local/bin/python2.7
-#import sys
-#sys.path.append('/home/mpet/Aaron/TitanMidasScripts/pythonmidas')
-
-#import afgcontrol
 import afg
 import pythonmidas.pythonmidas as midas
 import time
