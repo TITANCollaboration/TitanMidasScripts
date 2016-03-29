@@ -1,9 +1,5 @@
-#import sys
-#sys.path.append("/home/mpet/Aaron/TitanMidasScripts/pythonmidas/")
-
 import pythonmidas.pythonmidas as Midas
 import subprocess as sp
-#import time
 
 
 def read_ppg(filename="/home/mpet/online/ppg/ppgload/delays.dat"):
@@ -27,7 +23,6 @@ def read_ppg(filename="/home/mpet/online/ppg/ppgload/delays.dat"):
     endscan = [x for x in data if x.find("END_SCAN") > -1]
 
     begintime = beginscan[0].split()[4]
-    #endtime = endscan[0].split()[9].split('m')[0]
     endtime = endscan[0].split()[4]
 
     # the number of loop scans is also contained in the delays.dat file,
@@ -38,26 +33,12 @@ def read_ppg(filename="/home/mpet/online/ppg/ppgload/delays.dat"):
     return float(numscans) * (float(endtime) - float(begintime)) / 1000.0
 
 
-# Don't need this function, since the number of scans is in
-# delays.dat
-#def get_number_scans():
-#    """
-#    Get the number of scans. This is multiplied with the value
-#    from read_ppg(filename) to get the total run time.
-#    """
-#    path = "/Equipment/TITAN_ACQ/ppg cycle/begin_scan/loop count"
-#
-#    loopcount = Midas.varget(path)
-#    return int(loopcount)
-
-
 def run_time():
     """
     Return the runtime in minutes. This is useful for calculating
     how long a tune switch will run for.
     """
     triconfig()  # ODB might have updated, so recompile the ppg
-    #return float(get_number_scans()) * read_ppg() / 60.0
     try:
         return "{0:.2f}".format(read_ppg() / 60.0)
     except:
@@ -94,13 +75,9 @@ def triconfig():
                          shell=True,
                          stdout=sp.PIPE,
                          stderr=sp.PIPE)
-        #ans = shell.communicate()[0].rstrip()
-        #time.sleep(5)
         shell.communicate()
         #print shell.returncode
         if shell.returncode > 1 or shell.returncode < 0:
-            #msg = "Command "+cmd+" not sent to the odb correctly."
-            #sendmessage("pythonmidas",msg)
             raise Exception("tri_config compile error")
 
 
@@ -118,6 +95,6 @@ def check_run_state():
     if state == 3:
         return "running"
 
-    # should never get here, but return "rnning" so that we don't
+    # should never get here, but return "running" so that we don't
     # mess anything up.
     return "running"
