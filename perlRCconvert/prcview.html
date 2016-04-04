@@ -14,7 +14,7 @@
 	</head>
 	<body>
 	<form name="form2" action="PRCView&" method="get" target="_self">
-		<input name="redir" value="PRCView&" type=hidden>
+		<input name="redir" value="PRCTest&" type=hidden>
 		<div class="row" align="center">
 				<table border=3 cellpadding=2>
 					<tr>
@@ -54,6 +54,10 @@
 				<h4> &sigma;<sub>TOF</sub> </h4>
 			</div>
 		</div>
+		<div class="row" align="center">
+		    <table class="dc-data-table">
+		    </table>
+		</div>
 	</form>
 
 	<script type="text/javascript">
@@ -73,6 +77,8 @@
 		var allxvsN = dc.compositeChart("#xvsN");
 		var xvsN = dc.lineChart(allxvsN);
 		var xvsN2 = dc.lineChart(allxvsN);
+
+		var scanTable = dc.dataTable(".dc-data-table");
 
 		d3.json("json",function(error,d){
 			console.log(d)
@@ -461,6 +467,18 @@
 			   .title(function(d) { return d.value.avgtof;})
 			   .x(d3.scale.linear().domain([minval,maxval]))
 			   .xAxis();
+
+
+			var ScanDimension = facts.dimension(function(d){
+							return d.scanvar;
+						});
+			scanTable.dimension(ScanDimension)
+			.group(function(d){
+				return d.scanvar;
+			})
+			.columns(['scanvar', 'scanval']);
+
+
 
 			dc.renderAll();
 		});
