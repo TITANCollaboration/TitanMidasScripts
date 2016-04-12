@@ -1,7 +1,7 @@
 convert Midas files?
 y
 m2e default:
-./m2e_se.sh -e1Na23 -z1 -x0.100 -v0.271 /titan/data5/mpet/20160222/
+./m2e_se.sh -e1Na23 -z1 -x0.100 -v0.271 /titan/data5/mpet/20160412/
 MCA Range: 
 40 90
 Plot Indiviudal?
@@ -9,6 +9,176 @@ n
 Plot Positions?
 n
 Scan2D Value:
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271568> MPETCaptureDelay (ms)=0.04;
+<Run #271569> MPETCaptureDelay (ms)=0.0404;
+<Run #271570> MPETCaptureDelay (ms)=0.0408;
+<Run #271571> MPETCaptureDelay (ms)=0.0412;
+<Run #271572> MPETCaptureDelay (ms)=0.0416;
+<Run #271573> MPETCaptureDelay (ms)=0.042;
+<Run #271574> MPETCaptureDelay (ms)=0.0424;
+<Run #271575> MPETCaptureDelay (ms)=0.0428;
+<Run #271576> MPETCaptureDelay (ms)=0.0432;
+<Run #271577> MPETCaptureDelay (ms)=0.0436;
+<Run #271578> MPETCaptureDelay (ms)=0.044;
+end
+
+<Run #271175> MPET:LSXN (V)=1976.0;MPET:LSXP (V)=2016.0;;Centre Frequency (Hz)=1000000.0;
+end
+
 <Run #271091> Dipole Offset Time=0.01;
 <Run #271092> Dipole Offset Time=0.0188888888889;
 <Run #271093> Dipole Offset Time=0.0277777777778;
