@@ -3,7 +3,7 @@
 # Convert the file on run stop
 sh /home/mpet/local/scripts/convertOnRunStop.sh
 
-sleep 1
+#sleep 1
 # Run python run control script
 # Use the "old" PerlRC scripts:
 #sh /home/mpet/vr/perl/PerlRC/perlrc.sh
