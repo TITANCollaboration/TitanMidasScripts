@@ -74,13 +74,15 @@ def getAllJson():
             for x in d:
                 x['scan'] = 2
 
-    return flatten(data)
+    return [flatten(data), prc.lastScan]
 
 
 def dumpJson():
-    data = getAllJson()
+    data, rawLastScan = getAllJson()
     with open('/home/mpet/online/custom/jsondump.json', 'w') as outfile:
-        json.dump(data, outfile, indent=4, separators=(',', ': '))
+        #json.dump(data, outfile, indent=4, separators=(',', ': '))
+        json.dump([rawLastScan, data], outfile, indent=4,
+                  separators=(',', ': '))
 
 
 def flatten(a, result=[]):

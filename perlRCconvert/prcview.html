@@ -55,8 +55,10 @@
 			</div>
 		</div>
 		<div class="row" align="center">
-		    <table class="dc-data-table">
-		    </table>
+			<!-- <table class="dc-data-table"> </table> -->
+		    <!--<p id="PRC-string"></p>-->
+
+		    <table id="PRC-table"></table>
 		</div>
 	</form>
 
@@ -80,8 +82,25 @@
 
 		var scanTable = dc.dataTable(".dc-data-table");
 
-		d3.json("json",function(error,d){
-			console.log(d)
+		d3.json("json",function(error,dd){
+			d = dd[1];
+			console.log(d);
+
+			//document.getElementById("PRC-string").innerHTML = JSON.stringify(dd[0]);
+			function drawTable(data) {
+				for (var i = 0; i < data.length; i++) {
+					drawRow(data[i]);
+				}
+			}
+
+			function drawRow(rowData) {
+				var row = $("<tr />")
+				$("#PRC-table").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+				row.append($("<td>" + rowData + "</td>"));
+			}
+
+			drawTable(dd[0]);
+
 			var facts = crossfilter(d);
 			//var NDimension = facts.dimension(function(d){
 			//	return d.N;
