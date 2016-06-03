@@ -1,14 +1,26 @@
 40 90
 /home/mpet/local/scripts/SDA/data/
 0
-MPETCaptureDelay (ms)
-run271568_se_test.dat 0.04
-run271569_se_test.dat 0.0404
-run271570_se_test.dat 0.0408
-run271571_se_test.dat 0.0412
-run271572_se_test.dat 0.0416
-run271573_se_test.dat 0.042
-run271574_se_test.dat 0.0424
-run271575_se_test.dat 0.0428
-run271576_se_test.dat 0.0432
-run271577_se_test.dat 0.0436
+MPET:PLTM (V)
+run274580_se_test.dat -178.0
+run274581_se_test.dat -178.0
+run274582_se_test.dat -175.2
+run274583_se_test.dat -175.2
+run274584_se_test.dat -172.4
+run274585_se_test.dat -172.4
+run274586_se_test.dat -169.6
+run274587_se_test.dat -169.6
+run274588_se_test.dat -166.8
+run274589_se_test.dat -166.8
+run274590_se_test.dat -164.0
+run274591_se_test.dat -164.0
+run274592_se_test.dat -161.2
+run274593_se_test.dat -161.2
+run274594_se_test.dat -158.4
+run274595_se_test.dat -158.4
+run274596_se_test.dat -155.6
+run274597_se_test.dat -155.6
+run274598_se_test.dat -152.8
+run274599_se_test.dat -152.8
+run274600_se_test.dat -150.0
+run274601_se_test.dat -150.0
