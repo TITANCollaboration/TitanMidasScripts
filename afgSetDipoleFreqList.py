@@ -4,8 +4,9 @@ import afg
 
 try:
     myafg = afg.swift_afg()
-    myafg.afgSetTigger()
     myafg.afgSetOutputLoad()
+    myafg.afgSetTigger()
+    myafg.afgStartMenuOnOff()
     myafg.afgSetFreqList()
     myafg.closeConnection()
 except:
