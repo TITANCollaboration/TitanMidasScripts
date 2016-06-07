@@ -338,6 +338,7 @@ body {
 
 			allAvgTof.width(400)
 			   .height(200)
+			   .title(function(d) { return d.key + ': ' + d.value.avgtof; })
 			   .compose([bar,bar2])
 			   .yAxisLabel("<TOF>")
 			   .xAxisLabel("Scan Value")
@@ -444,6 +445,7 @@ body {
 			   .xAxis();
 			allStdPlot.width(400)
 			   .height(200)
+			   .title(function(d) { return d.key + ': ' + d.value.std; })
 			   .compose([stdPlot,stdPlot2])
 			   .yAxisLabel("std(TOF)")
 			   .xAxisLabel("Scan Value")
