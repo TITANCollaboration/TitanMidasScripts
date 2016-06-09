@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 TRANSITIONAL//EN">
+<html>
+	<head>
+		<title>Simple Frequency Calculator</title>
+		<!-- include the mhttpd JS library -->
+		<script src="../mhttpd.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+	<form name="form1" action="GET" method="/CS/FreqPlus&">
+		<input name="redir" value="FreqPlus&" type=hidden>
+			<!-- <input type=submit name=script value="Calc FreqPlus">
+			<input type=submit name=cmd value="Status"> -->
+		
+			<table border=3 cellpadding=2>
+      	<tr>
+					<th colspan="42" bgcolor="#A0A0FF">MPET Frequency Calculator
+				</tr> 
+        <tr>
+					<td colspan="42" align="center">
+						<b><font color="#ff 0">Actions: </font></b>
+						<input type="submit" name="script" value="Calc FreqPlus" >
+						<input value="Status" name="cmd" type="submit">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Contaminant List
+					</td>
+					<td colspan="41">
+						<odb src="/Experiment/Variables/Contaminants/Contaminant List" edit=2>
+					</td>
+				</tr>
+				<tr id="IonList">
+				</tr>
+				<tr id="FreqPText">
+					<!-- <td>
+						Contaminant FreqPlus
+					</td>
+					<td>
+						<!- - replace "mytext1" with the result of the js below. There is a 250ms delay to account for the
+						delay in calculating the frequencies. - ->
+						<span id="mytext1">
+						<script>
+							setTimeout(function() {
+									document.getElementById("mytext1").innerHTML = 
+										ODBGet("/Experiment/Variables/Contaminants/Contaminant FreqPlus");
+										}, 250)
+						</script>
+					</td> -->
+				</tr>
+				<tr id="FreqCText">
+					<!-- <td>
+						Contaminant FreqC
+					</td> -->
+					<!-- <td>
+						<span id="mytext">
+						<script>
+							setTimeout(function() {
+									document.getElementById("mytext").innerHTML = 
+										ODBGet("/Experiment/Variables/Contaminants/Contaminant FreqC");
+										}, 250)
+						</script>
+					</td> -->
+					<!-- <span id="FreqCText"> -->
+				</tr>
+			</table>
+		</form>
+
+		<script>
+
+			function tdTransform(s) {
+				s = s.replace(/,/g, "</td> <td>");
+				s = "<td>" + s + "</td>";
+				return s;
+			};
+
+			IonList = ODBGet("/Experiment/Variables/Contaminants/Contaminant List");
+			FreqPlus = ODBGet("/Experiment/Variables/Contaminants/Contaminant FreqPlus");
+			FreqCent = ODBGet("/Experiment/Variables/Contaminants/Contaminant FreqC");
+
+			console.log(tdTransform(FreqPlus));
+			console.log(tdTransform(FreqCent));
+
+			document.getElementById("IonList").innerHTML = "<td> Contaminant List </td>" + tdTransform(IonList);
+			document.getElementById("FreqPText").innerHTML = "<td> Contaminant FreqP </td>" + tdTransform(FreqPlus);
+			document.getElementById("FreqCText").innerHTML = "<td> Contaminant FreqC </td>" + tdTransform(FreqCent);
+		</script>
+	</body>
+</html>
