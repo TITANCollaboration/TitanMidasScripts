@@ -5,7 +5,7 @@ import time
 import smtplib
 
 # Time command was last executed
-VacuumAlarmFirstTriggered = "/Alarms/Alarms/Demo ODB/Time triggered first"
+VacuumAlarmFirstTriggered = "/Alarms/Alarms/MPET Vacuum/Time triggered first"
 
 # Check when the last time the command was executed.
 # If it is '0', then it is the first time the alarm is executed,
