@@ -22,6 +22,9 @@ class extractFromPerlRCLog:
             f.close()
 
     def get_last_scan(self):
+        '''Returns all of the lines from the end of the PerlRC log file,
+        starting with the last line that contains the start of a new
+        PerlRC scan.'''
         filtered = fnmatch.filter(self.lines, '=== NEW PerlRC scan at*')
         i = 0
         while True:
@@ -31,17 +34,22 @@ class extractFromPerlRCLog:
         self.lastScan = self.lines[-i:]
 
     def last_scan_runs(self):
+        '''From the last scan data, save the lines that contain a scan
+        record. These lines start with a "<".'''
         self.filesToConvert = []
         for l in self.lastScan:
             if l[0] == "<":
                 self.filesToConvert.append(l)
 
     def last_scan_filenames(self):
+        '''Extract the filenames from the list created by last_scan_runs()'''
         self.runFilenames = ['run' + f.replace('#', ' ').replace('>', ' ')
                              .split()[1].zfill(5) + '.mid'
                              for f in self.filesToConvert]
 
     def last_scan_values(self):
+        '''Get the value that was scanned. For simplicity, we take the value of
+        the variable that is first in the list.'''
         self.runValues = [f.replace('=', ';').split(';')[1]
                           for f in self.filesToConvert]
         return self.runValues
@@ -125,11 +133,9 @@ class extractFromPerlRCLog:
         print p.communicate()[0]
 
     def convert_file(self, filename):
-        #p = subprocess.Popen('/home/mpet/sette/simplified1Danalysis/m2e_se.sh ' + self.datapath + self.last_scan_date() + '/' + filename,
-        #                     stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-        #                     cwd='/home/mpet/sette/simplified1Danalysis/', shell=True)
-        p = subprocess.Popen(self.sdapath + 'm2e_se.sh ' + self.datapath +
-                             self.last_scan_date() + '/' + filename,
+        p = subprocess.Popen(self.sdapath + 'm2e_se.sh ' +
+                             self.datapath + self.last_scan_date() +
+                             '/' + filename,
                              stdin=subprocess.PIPE,
                              stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE,
