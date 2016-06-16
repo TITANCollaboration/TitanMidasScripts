@@ -1,12 +1,9 @@
 #!/bin/bash
 #
 
-#echo $MIDAS_EXPT_NAME
-
 # Get name of last written file
 path=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Data dir"'`
 path=`echo $path | awk '{print $3}'`
-#path='/titan/data1/mpet'
 echo "Data Dir: " $path
 filename=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Logger/Channels/0/Settings/Current Filename"'`
 filename=`echo $filename | awk '{print $3}'`
@@ -35,18 +32,15 @@ echo "Convert file?" $convert
 Ramsey=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Equipment/TITAN_ACQ/ppg cycle/"'`
 Ramsey=`echo $Ramsey | grep QUAD3`
 
+# Check to see if a file was written
 if [ "$wdata" == "n" ]
 then
    # data was not written
    echo Data was not written.
    exit
 fi
-#python /home/mpet/Aaron/TitanMidasScripts/getFreqC.py
-# Don't convert when PerlRC is running, unless it's a tune switch
-#if [ "$PRC" == "y" && "$TuneSwitch" != "TuneSwitch" ] # PerlRC running, so don't convert #echo PerlRC running
-   #exit
-#fi
 
+# Check to see if user wants to convert the file
 if [ "$convert" == "n" ]
 then
    # Convert checkbox now clicked.
@@ -54,6 +48,7 @@ then
    exit
 fi
 
+# Get the RF amplitude, and correct for Ramsey scheme
 RFAmp=`odb -e $MIDAS_EXPT_NAME -c 'ls "/Experiment/Variables/MPETRFAmp"'`
 RFAmp=`echo $RFAmp | awk '{print $2}'`
 if [ "$Ramsey" == "transition_QUAD3" ]
@@ -66,11 +61,7 @@ filename=$path"/"$filename
 #echo Filename to convert: $filename
 
 # convert the file on lxmpet
-#ssh mpet@lxmpet "m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename"
-# We don't need the RFAmp anymore, so ignore it
-#`m2e -v$RFAmp -d/titan/data1/mpet/evafiles/  $filename`
 result=`/home/mpet/local/bin/python2.7 /home/mpet/local/scripts/m2e.py -d/titan/data1/mpet/evafiles/ $filename 2>&1`
-#result=`/home/mpet/Aaron/scratch/error.py 2>&1`
 error=$?
 echo $result
 if [ "$error" == "0" ]
