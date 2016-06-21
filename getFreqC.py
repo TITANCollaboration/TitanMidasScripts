@@ -39,8 +39,12 @@ if __name__ == "__main__":
 
         reducedCyclotron = CF.dipole_frequencies(names)
         cyclotron = CF.cyclotron_frequencies(names)
+        freqerrs = CF.calc_freqerr(names)
 
         Midas.varset("/Experiment/Variables/Contaminants/Contaminant FreqPlus",
                      ", ".join(["%0.3f" % x for x in reducedCyclotron]))
         Midas.varset("/Experiment/Variables/Contaminants/Contaminant FreqC",
                      ", ".join(["%0.3f" % x for x in cyclotron]))
+        Midas.varset("/Experiment/Variables/Contaminants/" +
+                     "Contaminant FreqC Error",
+                     ", ".join(["%0.3f" % x for x in freqerrs]))
