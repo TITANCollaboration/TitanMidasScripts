@@ -4,6 +4,7 @@
 		<title>Simple Frequency Calculator</title>
 		<!-- include the mhttpd JS library -->
 		<script src="../mhttpd.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="mhttpd.css"> 
 	</head>
 	
 	<body>
@@ -12,7 +13,7 @@
 		<!-- <input type=submit name=script value="Calc FreqPlus">
 		<input type=submit name=cmd value="Status"> -->
 	
-		<table border=3 cellpadding=2>
+		<table class="ODBtable" style="border-spacing=0px;">
 			<tr>
 				<th colspan="42" bgcolor="#A0A0FF">MPET Frequency Calculator
 			</tr> 
@@ -21,6 +22,7 @@
 					<b><font color="#ff 0">Actions: </font></b>
 					<input type="submit" name="script" value="Calc FreqPlus" >
 					<input value="Status" name="cmd" type="submit">
+					<button type="button" onclick="document.location.href='/Experiment/Variables/MPET RF Calibration';">RF Calibration</button>
 				</td>
 			</tr>
 			<tr>
