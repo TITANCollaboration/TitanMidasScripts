@@ -77,9 +77,19 @@ def getAllJson():
 
     # Added the scan variable and scan values into the
     # JSON data.
+    counter = 0
+    count_dict = dict()
     for d, y in zip(data, scanvals):
         for x in d:
-            x['scanval'] = float(y)
+            try:
+                x['scanval'] = float(y)
+            except:
+                try:
+                    x['scanval'] = count_dict[y]
+                except:
+                    count_dict[y] = counter
+                    counter = counter + 1
+                    x['scanval'] = count_dict[y]
             x['scanvar'] = scanvar
             x['scan'] = 1
 
